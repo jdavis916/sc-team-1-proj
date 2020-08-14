@@ -16,6 +16,7 @@ const cards = require("./data/cards.json");
 //Set Static path
 //server.use(express.static(path.join(__dirname, 'public')));
 server.use(express.static('public'));
+// server.use('static', express.static(path.join(__dirname, 'public')))
 //Sets our app to use the handlebars engine
 server.set('views', path.join(__dirname, 'views'));
 // server.set('view engine', 'handlebars');
@@ -34,7 +35,7 @@ server.engine('hbs', handlebars({
 
 server.get('/', (req, res) => {
 //Serves the body of the page aka "main.handlebars" to the container //aka "index.handlebars"
-res.render('main', { 
+res.render('index', { 
   	layout:'index',
   	title: 'Final Project Home',
   	pageTitle: 'COP Project - Home Page',

@@ -1,9 +1,14 @@
-li {
-font-size: 2rem;
-width: 300px;
-margin: 4px;
-padding: 4px;
-list-style: none
+.chatWindow{
+	height: 400px;
+	overflow: scroll;
 }
-.midlaner {background-color: #eeeeee}
-.toplaner {background-color: #ffea00}
+.chatBox{
+	display: block;
+	width: 100%;
+	margin-bottom: 10px;
+	padding: 18px;
+}
+.btnSend{
+	width: 100%;
+	height: 30px;
+}
