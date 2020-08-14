@@ -1,0 +1,17 @@
+{
+  "name": "copfinal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./server.js"
+  },
+  "author": "Jason Davis",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.1.0",
+    "nodemon": "^2.0.4",
+    "ws": "^7.3.1"
+  }
+}

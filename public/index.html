@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Final Project Samples</title>
+	<style type="text/css">
+		.chatWindow{
+			height: 400px;
+			overflow: scroll;
+		}
+		.chatBox{
+			display: block;
+			width: 100%;
+			margin-bottom: 10px;
+			padding: 18px;
+		}
+		.btnSend{
+			width: 100%;
+			height: 30px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Final Project Chat Sample</h1>
+	<pre id="chatWindow" class="chatWindow"></pre>
+	<input type="text" id="chatBox" class="chatBox" placeholder="Type your message here">
+	<button id="btnSend" class="btnSend" title="Send Message!">Send Message</button>
+	<script type="text/javascript">
+		(function(){
+			const sendBtn = document.querySelector('#btnSend');
+			const chatWindow = document.querySelector('#chatWindow');
+			const chatBox = document.querySelector('#chatBox');
+
+			let ws;
+
+			function showMessage(message){
+				chatWindow.textContent += `\n\n${message}`;
+				chatWindow.scrollTop = message.scrollHeight;
+				chatBox.value = '';
+			}
+
+			function init(){
+				if(ws){
+					ws.onerror = ws.onopen = ws.onclose = null;
+					ws.close();
+				}
+
+				ws = new WebSocket('ws://localhost:6900');
+				ws.onopen = () => {
+					console.log('Connection opened!');
+				}
+				ws.onmessage = ({data}) => showMessage(data);
+				ws.onclose = function(){
+					ws = null;
+				}
+
+				sendBtn.onclick = function(){
+					if(!ws){
+						showMessage("No WebSocket connection")
+						return;
+					}
+
+					ws.send(chatBox.value);
+					showMessage(chatBox.value);
+				}
+			}
+			init();
+		})();
+	</script>
+</body>
+</html>

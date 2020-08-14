@@ -1,0 +1,79 @@
+[
+	{
+		"deals": {
+			"big":[
+				{
+					"id": 1,
+					"cost": 180000,
+					"mortgage": 160000,
+					"downPayment": 20000,
+					"cashFlow": 1600,
+					"title": "Automated Business for Sale"
+				
+				}, 
+				{
+					"id": 2,
+					"cost": 180000,
+					"mortgage": 160000,
+					"downPayment": 20000,
+					"cashFlow": 1600,
+					"title": "Automated Business for Sale 2"
+				
+				}, 
+				{
+					"id": 3,
+					"cost": 180000,
+					"mortgage": 160000,
+					"downPayment": 20000,
+					"cashFlow": 1600,
+					"title": "Automated Business for Sale 3"
+				
+				}, 
+				{
+					"id": 4,
+					"cost": 180000,
+					"mortgage": 160000,
+					"downPayment": 20000,
+					"cashFlow": 1600,
+					"title": "Automated Business for Sale 4"
+				
+				}
+			]
+		,
+		"small": [
+			{
+				"id": 71,
+				"cost": 180000,
+				"mortgage": 160000,
+				"downPayment": 20000,
+				"cashFlow": 1600,
+				"title": "Automated Small Business for Sale"				
+			}, 
+			{
+				"id": 72,
+				"cost": 180000,
+				"mortgage": 160000,
+				"downPayment": 20000,
+				"cashFlow": 1600,
+				"title": "Automated Small Business for Sale 2"				
+			}, 
+			{
+				"id": 73,
+				"cost": 180000,
+				"mortgage": 160000,
+				"downPayment": 20000,
+				"cashFlow": 1600,
+				"title": "Automated Small Business for Sale 3"				
+			}, 
+			{
+				"id": 74,
+				"cost": 180000,
+				"mortgage": 160000,
+				"downPayment": 20000,
+				"cashFlow": 1600,
+				"title": "Automated Small Business for Sale 4"				
+			}
+		]
+	}
+	}
+]
