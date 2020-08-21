@@ -49,4 +49,8 @@ iframe{
 	height: 100%;
 	outline-style: groove;
 	outline-color: #9c27b0;
+
+}
+h2{
+	padding: 10%;
 }
