@@ -43,12 +43,20 @@ res.render('index', {
 	});
 });
 
-server.get('/test', (req, res) => {
-	//First paramenter serves the body of the page aka "main.hbs" to the container //aka "index.hbs"
-	res.render('mainView', { 
+server.get('/contact', (req, res) => {
+	res.render('contactView', { 
   	layout:'index',
-  	title: 'Final Project Test Page',
-  	pageTitle: 'COP Project - Test Page',
+  	title: 'Contact Page',
+  	pageTitle: 'COP Project - Contact Page',
+  	body: '<holder>'
+	});
+});
+
+server.get('/profile', (req, res) => {
+	res.render('profileView', { 
+  	layout:'index',
+  	title: 'Profile Page',
+  	pageTitle: 'COP Project - Profile Page',
   	body: '<holder>'
 	});
 });
@@ -59,6 +67,33 @@ server.get('/games', (req, res) => {
   	layout:'games',
   	title: 'Game Page',
   	pageTitle: 'COP Project - Game Page',
+  	body: '<holder>'
+	});
+});
+
+server.get('/merchant', (req, res) => {
+	res.render('merchantView', { 
+  	layout:'index',
+  	title: 'Merchant Page',
+  	pageTitle: 'COP Project - Merchant Page',
+  	body: '<holder>'
+	});
+});
+
+server.get('/tool', (req, res) => {
+	res.render('toolView', { 
+  	layout:'index',
+  	title: 'Tool Page',
+  	pageTitle: 'COP Project - Tool Page',
+  	body: '<holder>'
+	});
+});
+
+server.get('/signup', (req, res) => {
+	res.render('signupView', { 
+  	layout:'index',
+  	title: 'Sign-Up Page',
+  	pageTitle: 'COP Project - Sign-Up Page',
   	body: '<holder>'
 	});
 });
