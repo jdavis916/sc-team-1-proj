@@ -1,2 +1,17 @@
 The user's currently viewed page should have the page's navbar name be bold or highlighted to show the user where, in the website, they are.
-more comments on each page.
+
+(contactview)<!-- Steven's comment: change google maps to show where we are based(location of where this website was made), add input box to type in user's email and feedback -->
+
+(index)    <!-- Steven's comment: the text input boxes are very big and should add an option to add a profile pic. remove search bar -->
+
+(merchantview)  <!-- Steven's comment: a vertical list of items is fine as long as theres a description next to the image, name, and cost of the item  -->
+
+(profileview)      <!-- Steven's comment: the text input boxes are very big and the profile pic should be next to the info. remove search bar -->
+
+(signupview)<!-- Steven's comment: the text input boxes are very big and "log in" buttons should be stylized. remove search bar -->
+
+(toolview)<!-- Steven's comment: more comments once I see the placeholders filled -->
+
+These comments were originally in the master branch view pages until I was told to upload the comments on the design branch.
+
+I am in charge of the merchant and tools page.
