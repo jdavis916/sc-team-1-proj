@@ -1,0 +1,2 @@
+The user's currently viewed page should have the page's navbar name be bold or highlighted to show the user where, in the website, they are.
+more comments on each page.
