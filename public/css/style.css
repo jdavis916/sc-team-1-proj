@@ -69,8 +69,8 @@ h2{
 }
 .space-across{
 	display: grid;
-	grid-template-columns: auto auto auto auto auto auto auto;
-    grid-template-rows: auto auto auto auto auto auto auto;
+	grid-template-columns: auto auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto;
 }
 .item1{
 	grid-column: 2 / 2;
