@@ -13,14 +13,40 @@
 	height: 30px;
 }
 
+.carousel{
+	padding: 190px;
+}
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev{
+	display: block;
+}
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
 nav{
 	font-family:fantasy;
-	font-weight: 80px;
-	background-color: #9c27b0;
+	font-weight: 600;
+	background-color:#3E7E51;
 }
 body{
-	background-color: #f9f2b3;
+	background-color:#D4EEDC;
 	color: black;
+}
+footer{
+	background-color:#3E7E51;
+	border-top: 1px solid #000;
+}
+footer .row section{
+	text-align: center;	
+}
+.col-6{
+	max-width: 1000px;
+	flex: 10 0 0%
+}
+section .Storerow{
+	display: table;
 }
 
 p{
@@ -28,29 +54,44 @@ p{
 	outline-style: groove;
 	white-space: pre;
 	font-family: fantasy;
+	text-align: center;
 }
-
 button:focus{
 	border-radius: 
-	background-color#9c27b0
-
+	background-color#D4EEDC;
 }
-
 input{
-width:100%;
-padding: 50px;
-border:2px solid red;
-margin: 8px 0;
-border-radius: inherit;
+	width:100%;
+	padding: 50px;
+	border:2px solid red;
+	margin: 8px 0;
+	border-radius: inherit;
 }
-
 iframe{
 	width: 100%;
 	height: 100%;
 	outline-style: groove;
-	outline-color: #9c27b0;
-
+	outline-color: #D4EEDC;
 }
+
 h2{
 	padding: 10%;
+}
+@media all and (min-width: 576px){
+.container .container-sm {
+    max-width: none;
+	}
+}
+@media (min-width: 768px){
+.container, .container-md, .container-sm {
+    max-width: none;
+	}
+}
+
+.card {
+  display: -webkit-flex;
+  position: relative;
+  justify-content: center;
+  -webkit-justify-content: center;
+  padding: 50px;
 }
