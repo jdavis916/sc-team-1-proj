@@ -88,13 +88,13 @@ h2{
 	}
 }
 
-.SectionCardContainer .card{
+/*.SectionCardContainer .card{
   display: -webkit-flex;
   position: relative;
   justify-content: center;
   -webkit-justify-content: center;
   padding: 50px;
-  display: table-cell;
+  display: table-cell;*/
 }
  .card-wrapper {
     height: 100%;
@@ -107,4 +107,21 @@ h2{
 }
 .col-12{
 	padding: 50px;
+	display: contents;
+}
+h2{
+	border-bottom: groove;
+	font-size: 2rem;
+    padding: 30px;
+    border-bottom: groove;
+}
+h3 {
+    font-size: 2rem;
+    padding: 30px;
+    border-bottom: groove;
+}
+h4 {
+    font-size: 2rem;
+    padding: 30px;
+    border-bottom: groove;
 }
