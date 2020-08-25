@@ -11,78 +11,95 @@
 .btnSend{
 	width: 100%;
 	height: 30px;
+
+}
+.navbar{
+	overflow: hidden;
+	background-color: #3E7E51/*dark green*/;
 }
 
-nav{
-	font-family:fantasy;
-	font-weight: 80px;
-	background-color: #9c27b0;
+.navbar a{
+	float: right;
+	font-size: 15px;
+	color: white;
+	text-align: center;
+	padding: 15px
 }
 
-body{
-	background-color: #efa7f8;
+.container{
+	padding-top: 30px;
+	text-algn: center;
+}
+
+.column {
+  float: left;
+  padding: 10px;
+}
+
+.column-left {
+  width: 35%;
+}
+
+.column-right {
+  width: 65%;
+  padding-top: 50px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+ } 
+
+.body{
+	background-color: #d4eedc/*light green*/;
 	color: black;
 }
 
-p{
-	padding: 100px;
+.p{
+	text-align: center;
+	padding: 50px;
 	outline-style: groove;
 	white-space: pre;
 	font-family: fantasy;
+	margin: 25px;
 }
 
-/* profile page*/
-
-button:focus{
-	border-radius: 
-	background-color#9c27b0
+.button:focus{
+	border-radius: 15rem;
+	background-color: #9c27b0/*purple*/
 
 }
 
-input{
+.btn.btn-outline-success:hover{
+	background-color: #9c27b0;
+	color: white;
+	transition-duration: 0.3s;
+	box-shadow: 0 8px 16px 0 rbga(0,0,0,0.2), 
+	0 6px 20px 0 rgba(0,0,0,0.19);
+	border-radius: 8px;
+}
+
+.input{
 width:100%;
 padding: 5px;
-border:3px inset #d3cca4;
+border: 3px inset #d3cca4;
 margin: 8px 0;
 border-radius: inherit;
-
 }
 
-iframe{
+.iframe{
 	width: 100%;
 	height: 100%;
 	outline-style: groove;
-	outline-color: #9c27b0;
-
+	outline-color: #9c27b0/*purple*/;
 }
-h2{
+
+.p1{
+	text-align: center;
+	text-shadow: 2px 3px #779fff;
+}
+
+.h2{
 	padding: 10%;
 }
-
-.social-signin-facebook{
-	border:2px solid red;
-	padding: 25px;
-}
-.social-signin-twitter{
-	border:2px solid red;
-	padding: 25px;
-}
-.social-signin-google{
-	border:2px solid red;
-	padding: 25px;
-}
-.space-across{
-	display: grid;
-	grid-template-columns: auto auto auto auto auto auto auto;
-    grid-template-rows: auto auto auto auto auto auto auto;
-}
-.item1{
-	grid-column: 2 / 2;
-}
-.item2{
-	grid-column: 4 / 4;
-}
-.item3{
-	grid-column: 6 / 6;
-}
-
