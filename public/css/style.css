@@ -51,7 +51,7 @@
   clear: both;
  } 
 
-.body{
+body{
 	background-color: #d4eedc/*light green*/;
 	color: black;
 }
@@ -90,16 +90,87 @@ border-radius: inherit;
 
 .iframe{
 	width: 100%;
-	height: 100%;
+	height: 300px;
 	outline-style: groove;
+	outline-color: #3E7E51;
+}
+h2{
+	padding: 10%;
+}
+
+.social-signin-facebook{
+	border:2px solid #3E7E51;
+	padding: 25px;
+}
+.social-signin-twitter{
+	border:2px solid #3E7E51;
+	padding: 25px;
+}
+.social-signin-google{
+	border:2px solid #3E7E51;
+	padding: 25px;
+}
+.space-across{
+	display: grid;
+	grid-template-columns: auto auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto;
+}
+.facebook{
+	grid-column: 3 / 3;
+}
+.twitter{
+	grid-column: 4 / 4;
+}
+.google{
+	grid-column: 5 / 5;
+}
+.user{
+	padding: 10px;
+}
+.bigbox{
+	padding: 50px;
+	border:2px solid #3E7E51;
+	width: 100%;
+}
+.vertical{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 60%;
+}
+.rightside{
+	display: block;
+	margin-left: 70%;
+	width: 100px;
+	padding: 5px;
+}
+.sizer{
+	display: grid;
+			grid-template-columns: auto auto auto auto auto auto;
+			grid-template-rows: auto auto auto auto auto auto;
+}
+@media screen and (max-width: 661px) {
+	.sizer {
+		display: grid;
+			grid-template-columns: auto auto auto auto auto auto;
+			grid-template-rows: auto auto auto auto auto auto;
+	}
+}	
+@media screen and (max-width: 661px) {
+	.sizer {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 60%;
+	}
+}
+
+.separater{
+	color: solid #3E7E51;
 	outline-color: #9c27b0/*purple*/;
 }
 
 .p1{
 	text-align: center;
 	text-shadow: 2px 3px #779fff;
-}
-
-.h2{
-	padding: 10%;
 }
