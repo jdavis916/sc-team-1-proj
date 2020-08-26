@@ -31,6 +31,7 @@ nav{
 	background-color:#3E7E51;
 }
 body{
+	background-image: linear-gradient(#D4EEDC,yellow);
 	background-color:#D4EEDC;
 	color: black;
 }
@@ -108,6 +109,13 @@ h2{
 #card2{
 	padding: 50px;
 }
+.col-auto {
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: auto;
+    max-width: 100%;
+    padding: 50px;
+}
 .col-12{
 	padding: 50px;
 	display: contents;
@@ -127,4 +135,24 @@ h4 {
     font-size: 2rem;
     padding: 30px;
     border-bottom: groove;
+}
+.card-img, .card-img-bottom {
+    border-bottom-right-radius: calc(.25rem - 1px);
+    border-bottom-left-radius: calc(.25rem - 1px);
+    padding: 50px;
+}
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: row;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #b17246;
+    background-clip: border-box;
+    border: 5px solid rgb(62, 126, 81);
+    border-radius: 50rem;
+    padding: 50px;
+    background-image: linear-gradient(#D4EEDC,#3e7e51);
 }
