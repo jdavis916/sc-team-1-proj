@@ -31,7 +31,7 @@ nav{
 	background-color:#3E7E51;
 }
 body{
-	background-image: linear-gradient(#D4EEDC,yellow);
+	background-image: linear-gradient(#D4EEDC,#eaea45b5);
 	background-color:#D4EEDC;
 	color: black;
 }
@@ -52,10 +52,11 @@ section .Storerow{
 
 p{
 	padding: 100px;
-	outline-style: groove;
+	outline-style: none;
 	white-space: pre;
 	font-family: fantasy;
 	text-align: center;
+	font-size: x-large;
 }
 button:focus{
 	border-radius: 
