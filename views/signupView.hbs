@@ -1,16 +1,17 @@
 <div id="login-box">
   <div class="vertical">
     <h1>Sign up</h1>
-    
-    <input type="text" name="username" placeholder="Username" class="user, input" />
-    <input type="text" name="Name" placeholder="Name" class="user, input"/>
-    <input type="text" name="email" placeholder="E-mail" class="user, input"/>
-    <input type="password" name="password" placeholder="Password" class="user, input"/>
-    <input type="password" name="password2" placeholder="Retype password" class="user, input"/>
- 	<input type="text" name="Date Of Birth" placeholder="DOB" class="user, input"/>
 
+    <form action="/action_page.php">
+      <input type="text" name="username" placeholder="Username" class="user, input" required/>
+      <input type="text" name="Name" placeholder="Name" class="user, input" required/>
+      <input type="text" name="email" placeholder="E-mail" class="user, input" required/>
+      <input type="password" name="password" placeholder="Password" class="user, input" required/>
+      <input type="password" name="password2" placeholder="Retype password" class="user, input" required/>
+      <input type="text" name="Date Of Birth" placeholder="DOB" class="user, input" required/>
+      <input type="submit" name="signup_submit" value="Sign me up" class="rightside" onclick="validate()"/>
+    </form>
     
-    <input type="submit" name="signup_submit" value="Sign me up" class="rightside"/>
   </div>
   &nbsp;
   <div class="sizer">
@@ -20,4 +21,3 @@
   </div>
 </div>
 &nbsp;
-
