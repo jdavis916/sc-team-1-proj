@@ -56,11 +56,6 @@
 	margin-right: auto;
 }
 
-@media (min-width: 576px)
-.container, .container-sm {
-    max-width: 540px;
-}
-
 .row{
 	display: inline-flex;
 	flex-wrap: wrap;
@@ -70,16 +65,16 @@
 	margin-bottom: 58px;
 }
 
+.column {
+    float: center;
+    padding: 10px;
+}
+
 .row:after {
     content: "";
     display: table;
     clear: both;
  }
-
-.column {
-    float: center;
-    padding: 10px;
-}
 
 .column-left {
     width: 30%
@@ -92,14 +87,23 @@
     width: 70%;
     padding-top: 90px;
     /*padding-right: 50px; */
-    
+} 
+
+/* Responsive layout() 
+@media screen and (min-width: 576px,max-width: 540px;){
+.column-left, .column-right {
+    width: 100%;
+  }
 }
 
-@media (min-width: 576px)
+@media screen and (min-width: 576px){
 .col-sm-6 {
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     max-width: 30%;
+  }
+}    
+*/
 
 .h-1, .h-2{
 	margin-top: 30px;
@@ -111,6 +115,26 @@
 
 .img{
 	vertical-align: middle;
+}
+
+/* image shaking animation*/
+.img1:hover{
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake{
+	0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
 .p2{
@@ -137,16 +161,16 @@
 }
 /* ^ Profile Page ^ */
 
-body{
+.body{
 	background-image: linear-gradient(#D4EEDC,#eaea45b5);
 	background-color:#D4EEDC;
 	color: black;
 }
-footer{
+.footer{
 	background-color:#3E7E51;
 	border-top: 1px solid #000;
 }
-footer .row section{
+.footer .rowsection{
 	text-align: center;	
 }
 
@@ -154,7 +178,7 @@ footer .row section{
 	max-width: 1000px;
 	flex: 10 0 0%
 }
-section .Storerow{
+.section .Storerow{
 	display: table;
 }
 
@@ -220,6 +244,7 @@ h2{
 	padding: 50px;
 	display: contents;
 }
+
 h2{
 	border-bottom: groove;
 	font-size: 2rem;
@@ -227,28 +252,33 @@ h2{
     border-bottom: groove;
      max-width: min-content;
 }
+
 h3 {
     font-size: 2rem;
     padding: 30px;
     border-bottom: groove;
     max-width: min-content;
 }
+
 h4 {
     font-size: 2rem;
     padding: 30px;
     border-bottom: groove;
     max-width: min-content;
 }
+
 .card-img, .card-img-bottom {
     border-bottom-right-radius: calc(.25rem - 1px);
     border-bottom-left-radius: calc(.25rem - 1px);
     padding: 50px;
 }
+
 .cardtext{
 	text-align: center;
 	justify-content: center;
 	max-width
 }
+
 .card {
     position: relative;
     display: -ms-flexbox;
