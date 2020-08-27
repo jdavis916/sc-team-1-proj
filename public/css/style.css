@@ -98,7 +98,7 @@
     /*padding-right: 50px; */
 } 
 
-/* Responsive layout() 
+ Responsive layout() 
 @media screen and (min-width: 576px,max-width: 540px;){
 .column-left, .column-right {
     width: 100%;
@@ -124,7 +124,7 @@
     max-width: 30%;
   }
 }    
-*/
+
 
 .h-1, .h-2{
 	margin-top: 30px;
