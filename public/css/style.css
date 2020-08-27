@@ -31,11 +31,7 @@
     height: 100%;
   }
 
-.navbar-collapse {
-  -webkit-flex-basis: 100%;
-  -webkit-flex-grow: 1;
-  -webkit-align-items: center;
-}
+
 nav{
 	font-family:fantasy;
 	font-weight: 600;
