@@ -11,7 +11,7 @@
 .btnSend{
 	width: 100%;
 	height: 30px;
-
+/*----------Tyrees Code-----------------*/
 }
 .navbar{
 	overflow: hidden;
@@ -30,6 +30,12 @@
     width: 100%;
     height: 100%;
   }
+
+.navbar-collapse {
+  -webkit-flex-basis: 100%;
+  -webkit-flex-grow: 1;
+  -webkit-align-items: center;
+}
 
 /*nav{
 	font-family:fantasy;
@@ -94,6 +100,15 @@
 .column-left, .column-right {
     width: 100%;
   }
+}
+.merchrow{
+	display: -webkit-inline-box;
+	display: block;
+}
+
+.row {
+  display: -webkit-flex;
+  -webkit-flex-wrap: wrap;
 }
 
 @media screen and (min-width: 576px){
@@ -200,6 +215,10 @@ iframe{
 h2{
 	padding: 10%;
 }
+@media all and(max-width: 100%){
+	max-width:100%;
+	}
+}
 
 @media all and (min-width: 576px){
 .container .container-sm {
@@ -272,10 +291,13 @@ h4 {
     padding: 50px;
 }
 
-.cardtext{
-	text-align: center;
-	justify-content: center;
-	max-width
+.cardText{
+    text-align: center;
+    justify-content: center;
+    /* outline-style: groove; */
+    border-bottom: solid;
+    border-radius: 50px;
+    background-image: linear-gradient(45deg,#D4EEDC, #3e7e51);
 }
 
 .card {
@@ -288,12 +310,16 @@ h4 {
     word-wrap: break-word;
     background-color: #b17246;
     background-clip: border-box;
-    border: 5px solid rgb(62, 126, 81);
     border-radius: 50rem;
     padding: 50px;
     background-image: linear-gradient(#D4EEDC,#3e7e51);
 }
-
+img {
+    vertical-align: middle;
+    border-style: none;
+    padding: inherit;
+}
+/*-----------------------------------------------*/
 .social-signin-facebook{
 	border:2px solid #3E7E51;
 	padding: 10px;
