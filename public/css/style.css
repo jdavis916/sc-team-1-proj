@@ -22,7 +22,7 @@
 .carousel{
 	padding: 190px;
 	border:10px solid transparent;
-	border-image: url(logo.png)50 round;
+	border-image: 50 round;
 }
 .carousel-item.active,
 .carousel-item-next,
@@ -54,7 +54,8 @@
 	padding: 15px
 }
 
-.body{
+
+body{
 	background-image: linear-gradient(#D4EEDC,#eaea45b5);
 	background-color:#D4EEDC;
 	color: black;
