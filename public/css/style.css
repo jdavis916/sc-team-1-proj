@@ -148,11 +148,10 @@
 
 .input{
 	width:100%;
-	padding: 10px;
-	border: 3px dotted #3e7e51;
-	margin: 8px;
+	padding: 5px;
+	border:2px solid #3E7E51;
+	margin: 8px 0;
 	border-radius: inherit;
-	overflow: visible;
 }
 
 .button:focus{
@@ -297,16 +296,16 @@ h4 {
 
 .social-signin-facebook{
 	border:2px solid #3E7E51;
-	padding: 25px;
+	padding: 10px;
 }
 
 .social-signin-twitter{
 	border:2px solid #3E7E51;
-	padding: 25px;
+	padding: 10px;
 }
 .social-signin-google{
 	border:2px solid #3E7E51;
-	padding: 25px;
+	padding: 10px;
 }
 .space-across{
 	display: grid;
@@ -329,6 +328,7 @@ h4 {
 	padding: 50px;
 	border:2px solid #3E7E51;
 	width: 100%;
+	margin: 8px 0;
 }
 .vertical{
 	display: block;
@@ -338,28 +338,37 @@ h4 {
 }
 .rightside{
 	display: block;
-	margin-left: 70%;
-	width: 100px;
+	width: 50%;
 	padding: 5px;
+	border:2px solid #3E7E51;
+	margin: 8px auto;
 }
 .sizer{
 	display: grid;
-			grid-template-columns: auto auto auto auto auto auto;
-			grid-template-rows: auto auto auto auto auto auto;
+	grid-template-columns: auto auto auto auto auto auto;
+	grid-template-rows: auto auto auto auto auto auto;
 }
-@media screen and (max-width: 661px) {
-	.sizer {
-		display: grid;
-			grid-template-columns: auto auto auto auto auto auto;
-			grid-template-rows: auto auto auto auto auto auto;
-	}
-}	
-@media screen and (max-width: 661px) {
+@media screen and (max-width: 709px) {
 	.sizer {
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
 		width: 60%;
+	}
+	.social-signin-facebook{
+		border:2px solid #3E7E51;
+		padding: 10px;
+		width: 100%;
+	}
+	.social-signin-twitter{
+		border:2px solid #3E7E51;
+		padding: 10px;
+		width: 100%;
+	}
+	.social-signin-google{
+		border:2px solid #3E7E51;
+		padding: 10px;
+		width: 100%;
 	}
 }
 
