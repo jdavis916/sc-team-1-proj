@@ -9,11 +9,11 @@ const firstName
 /* Calculator */
 "use strict";
 
-var input = document.getElementById('input'), // input/output button
-  number = document.querySelectorAll('.numbers div'), // number buttons
-  operator = document.querySelectorAll('.operators div'), // operator buttons
-  result = document.getElementById('result'), // equal button
-  clear = document.getElementById('clear'), // clear button
+var input = document.getElementById('cal-input'), // input/output button
+  number = document.querySelectorAll('.cal-numbers div'), // number buttons
+  operator = document.querySelectorAll('.cal-operators div'), // operator buttons
+  result = document.getElementById('cal-result'), // equal button
+  clear = document.getElementById('cal-clear'), // clear button
   resultDisplayed = false; // flag to keep an eye on what output is displayed
 
 // adding click handlers to number buttons
