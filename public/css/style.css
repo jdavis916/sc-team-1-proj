@@ -17,6 +17,8 @@
 .navbar{
 	overflow: hidden;
 	background-color: #3E7E51/*dark green*/;
+	text-transform: uppercase;
+	white-space: pre;
 }
 
 .carousel{
@@ -52,11 +54,24 @@
 	color: white;
 	text-align: center;
 	padding: 15px
+
 }
 
 h1{
 	text-align:center;
+	text-align-last: justify;
 	padding: 100px;
+	font-variant: small-caps;
+	animation-name: color;
+	animation-duration:6s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes color {
+	from{color: red;}
+	to {color: yellow;}
 }
 
 body{
@@ -68,7 +83,7 @@ body{
 	background-color:#3E7E51;
 	border-top: 1px solid #000;
 }
-.footer .rowsection{
+footer .rowsection{
 	text-align: center;	
 }
 
@@ -182,8 +197,16 @@ h4 {
     border-bottom: solid;
     border-radius: 50px;
     background-image: linear-gradient(45deg,#D4EEDC, #3e7e51);
+    animation-name: background;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-fill-mode: both;
 }
-
+@keyframes background {
+	from{background-color:#D4EEDC;}
+	to {background-color:#3e7e51;}
+}
 .card {
     position: relative;
     display: -ms-flexbox;
