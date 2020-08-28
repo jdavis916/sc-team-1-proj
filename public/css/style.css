@@ -13,9 +13,9 @@
 	height: 30px;
 }
 
-.navbar{
-	/*overflow: hidden;*/
-	background-color: #3E7E51/*dark green*/;
+/*.navbar{
+	/*overflow: hidden;/
+	background-color: #3E7E51/*dark green/;
 }
 
 /*.carousel{
@@ -37,13 +37,13 @@
   -webkit-flex-basis: 100%;
   -webkit-flex-grow: 1;
   -webkit-align-items: center;
-}*/
+}*
 
 /*nav{
 	font-family:fantasy;
 	font-weight: 600;
 	background-color:#3E7E51;
-} */
+} *
 
 .navbar a{
 	float: right;
@@ -73,7 +73,7 @@ body{
 
 .col-6{
 /*	max-width: 1000px;
-	flex: 10 0 0%*/
+	flex: 10 0 0%*
 }
 .section .Storerow{
 	display: table;
@@ -120,7 +120,7 @@ h2{
   justify-content: center;
   -webkit-justify-content: center;
   padding: 50px;
-  display: table-cell;*/
+  display: table-cell;*
 }
 .card{
 	background-color: #D4EEDC;
@@ -139,11 +139,11 @@ h2{
     flex: 0 0 auto;
     width: auto;
     max-width: 100%;
-    padding: 50px;*/
+    padding: 50px;*
 }
 .col-12{
-/*	padding: 50px;
-	display: contents;*/
+*	padding: 50px;
+	display: contents;*
 }
 
 h2{
@@ -177,7 +177,7 @@ h4 {
 .cardText{
     text-align: center;
     justify-content: center;
-    /* outline-style: groove; */
+    /* outline-style: groove; *
     border-bottom: solid;
     border-radius: 50px;
     background-image: linear-gradient(45deg,#D4EEDC, #3e7e51);
@@ -192,7 +192,7 @@ h4 {
     /*-ms-flex-direction: column;
     flex-direction: row;
     min-width: 0;
-    word-wrap: break-word;*/
+    word-wrap: break-word;*
     background-color: #b17246;
     background-clip: border-box;
     border-radius: 50rem;
@@ -206,9 +206,9 @@ img {
 }
 /*----------Tyrees Code-----------------*/
 
-/*.navbar{
+.navbar{
 	overflow: hidden;
-	background-color: #3E7E51/*dark green/;
+	background-color: #3E7E51/*dark green*/;
 	text-transform: uppercase;
 	white-space: pre;
 }
@@ -234,11 +234,11 @@ img {
   -webkit-align-items: center;
 }
 
-/*nav{
+nav{
 	font-family:fantasy;
 	font-weight: 600;
 	background-color:#3E7E51;
-} *
+} 
 
 .navbar a{
 	float: right;
@@ -278,7 +278,9 @@ body{
 footer .rowsection{
 	text-align: center;	
 }
-
+.col{
+	padding: 19px;
+}
 .col-6{
 	max-width: 1000px;
 	flex: 10 0 0%
@@ -288,7 +290,7 @@ footer .rowsection{
 }
 
 p{
-	padding: 100px;
+	padding: 50px;
 	outline-style: none;
 	white-space: pre;
 	font-family: fantasy;
@@ -322,13 +324,6 @@ h2{
 	}
 }
 
-/*.SectionCardContainer .card{
-  display: -webkit-flex;
-  position: relative;
-  justify-content: center;
-  -webkit-justify-content: center;
-  padding: 50px;
-  display: table-cell;*
 }
 .card{
 	background-color: #D4EEDC;
@@ -339,16 +334,7 @@ h2{
     transition: box-shadow 0.3s;
    -webkit-flex:1;
 }
-#card2{
-	padding: 50px;
-}
-.col-auto {
-    -ms-flex: 0 0 auto;
-    flex: 0 0 auto;
-    width: auto;
-    max-width: 100%;
-    padding: 50px;
-}
+
 .col-12{
 	padding: 50px;
 	display: contents;
@@ -385,7 +371,7 @@ h4 {
 .cardText{
     text-align: center;
     justify-content: center;
-    /* outline-style: groove; *
+    /* outline-style: groove; */
     border-bottom: solid;
     border-radius: 50px;
     background-image: linear-gradient(45deg,#D4EEDC, #3e7e51);
@@ -399,7 +385,7 @@ h4 {
 	from{background-color:#D4EEDC;}
 	to {background-color:#3e7e51;}
 }
-.card {
+.cardAlt{
     position: relative;
     display: -ms-flexbox;
     display: flex;
@@ -516,10 +502,7 @@ img {
 .row{
 	display: inline-flex;
 	flex-wrap: wrap;
-	margin-right: wrap;
-	margin-right: -329px;
-	margin-left: -18px;
-	margin-bottom: 58px;
+	
 }
 
 .column {
@@ -552,14 +535,9 @@ img {
     width: 100%;
   }
 }
-.merchrow{
-	display: -webkit-inline-box;
-	display: block;
-}
 
-.row2{
-	padding: 19px;
-}
+
+
 .row {
   display: -webkit-flex;
   -webkit-flex-wrap: wrap;
