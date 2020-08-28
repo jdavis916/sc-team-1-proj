@@ -184,3 +184,6 @@ h2{
 	text-align: center;
 	text-shadow: 2px 3px #779fff;
 }
+.user.invalid{
+	border-color: red;
+}
