@@ -12,14 +12,13 @@
 	width: 100%;
 	height: 30px;
 }
-/*----------Tyrees Code-----------------*/
 
-.navbar{
-	overflow: hidden;
-	background-color: #3E7E51/*dark green*/;
+/*.navbar{
+	/*overflow: hidden;/
+	background-color: #3E7E51/*dark green/;
 }
 
-.carousel{
+/*.carousel{
 	padding: 50px;
 	border:10px solid transparent;
 	border-image: 50 round;
@@ -32,19 +31,19 @@
 .carousel-inner img {
     width: 100%;
     height: 100%;
-  }
+  }*/
 
-.navbar-collapse {
+/*.navbar-collapse {
   -webkit-flex-basis: 100%;
   -webkit-flex-grow: 1;
   -webkit-align-items: center;
-}
+}*
 
 /*nav{
 	font-family:fantasy;
 	font-weight: 600;
 	background-color:#3E7E51;
-} */
+} *
 
 .navbar a{
 	float: right;
@@ -73,6 +72,216 @@ body{
 }
 
 .col-6{
+/*	max-width: 1000px;
+	flex: 10 0 0%*
+}
+.section .Storerow{
+	display: table;
+}
+
+p{
+	padding: 100px;
+	outline-style: none;
+	white-space: pre;
+	font-family: fantasy;
+	text-align: center;
+	font-size: x-large;
+} 
+
+iframe{
+	width: 100%;
+	height: 300px;
+	outline-style: groove;
+	outline-color: #D4EEDC;
+}
+
+h2{
+	padding: 10%;
+}
+/*@media all and(max-width: 100%){
+	max-width: 100%;
+	}
+}*/
+
+/*@media all and (min-width: 576px){
+.container .container-sm {
+    max-width: none;
+	}
+}
+@media (min-width: 768px){
+.container, .container-md, .container-sm {
+    max-width: none;
+	}
+}*/
+
+/*.SectionCardContainer .card{
+  display: -webkit-flex;
+  position: relative;
+  justify-content: center;
+  -webkit-justify-content: center;
+  padding: 50px;
+  display: table-cell;*
+}
+.card{
+	background-color: #D4EEDC;
+}
+ .card-wrapper {
+    height: 100%;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    transition: box-shadow 0.3s;
+   -webkit-flex:1;
+}
+#card2{
+	padding: 50px;
+}
+.col-auto {
+/*    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: auto;
+    max-width: 100%;
+    padding: 50px;*
+}
+.col-12{
+*	padding: 50px;
+	display: contents;*
+}
+
+h2{
+	border-bottom: groove;
+	font-size: 2rem;
+    padding: 30px;
+    border-bottom: groove;
+     max-width: min-content;
+}
+
+h3 {
+    font-size: 2rem;
+    padding: 30px;
+    border-bottom: groove;
+    max-width: min-content;
+}
+
+h4 {
+    font-size: 2rem;
+    padding: 30px;
+    border-bottom: groove;
+    max-width: min-content;
+}
+
+.card-img, .card-img-bottom {
+    border-bottom-right-radius: calc(.25rem - 1px);
+    border-bottom-left-radius: calc(.25rem - 1px);
+    padding: 50px;
+}
+
+.cardText{
+    text-align: center;
+    justify-content: center;
+    /* outline-style: groove; *
+    border-bottom: solid;
+    border-radius: 50px;
+    background-image: linear-gradient(45deg,#D4EEDC, #3e7e51);
+}
+.cardText1{
+
+}
+.cardAlt {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    /*-ms-flex-direction: column;
+    flex-direction: row;
+    min-width: 0;
+    word-wrap: break-word;*
+    background-color: #b17246;
+    background-clip: border-box;
+    border-radius: 50rem;
+    padding: 50px;
+    background-image: linear-gradient(#D4EEDC,#3e7e51);
+}
+img {
+    vertical-align: middle;
+    border-style: none;
+    padding: inherit;
+}
+/*----------Tyrees Code-----------------*/
+
+.navbar{
+	overflow: hidden;
+	background-color: #3E7E51/*dark green*/;
+	text-transform: uppercase;
+	white-space: pre;
+}
+
+.carousel{
+	padding: 50px;
+	border:10px solid transparent;
+	border-image: 50 round;
+}
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev{
+	display: block;
+}
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+
+.navbar-collapse {
+  -webkit-flex-basis: 100%;
+  -webkit-flex-grow: 1;
+  -webkit-align-items: center;
+}
+
+nav{
+	font-family:fantasy;
+	font-weight: 600;
+	background-color:#3E7E51;
+} 
+
+.navbar a{
+	float: right;
+	font-size: 15px;
+	color: white;
+	text-align: center;
+	padding: 15px
+
+}
+
+h1{
+	text-align:center;
+	text-align-last: justify;
+	padding: 100px;
+	font-variant: small-caps;
+	animation-name: color;
+	animation-duration:6s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes color {
+	from{color: red;}
+	to {color: yellow;}
+}
+
+body{
+	background-image: linear-gradient(#D4EEDC,#eaea45b5);
+	background-color:#D4EEDC;
+	color: black;
+}
+.footer{
+	background-color:#3E7E51;
+	border-top: 1px solid #000;
+}
+footer .rowsection{
+	text-align: center;	
+}
+.col{
+	padding: 19px;
+}
+.col-6{
 	max-width: 1000px;
 	flex: 10 0 0%
 }
@@ -81,7 +290,7 @@ body{
 }
 
 p{
-	padding: 100px;
+	padding: 50px;
 	outline-style: none;
 	white-space: pre;
 	font-family: fantasy;
@@ -115,13 +324,6 @@ h2{
 	}
 }
 
-/*.SectionCardContainer .card{
-  display: -webkit-flex;
-  position: relative;
-  justify-content: center;
-  -webkit-justify-content: center;
-  padding: 50px;
-  display: table-cell;*/
 }
 .card{
 	background-color: #D4EEDC;
@@ -132,16 +334,7 @@ h2{
     transition: box-shadow 0.3s;
    -webkit-flex:1;
 }
-#card2{
-	padding: 50px;
-}
-.col-auto {
-    -ms-flex: 0 0 auto;
-    flex: 0 0 auto;
-    width: auto;
-    max-width: 100%;
-    padding: 50px;
-}
+
 .col-12{
 	padding: 50px;
 	display: contents;
@@ -182,9 +375,17 @@ h4 {
     border-bottom: solid;
     border-radius: 50px;
     background-image: linear-gradient(45deg,#D4EEDC, #3e7e51);
+    animation-name: background;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-fill-mode: both;
 }
-
-.card {
+@keyframes background {
+	from{background-color:#D4EEDC;}
+	to {background-color:#3e7e51;}
+}
+.cardAlt{
     position: relative;
     display: -ms-flexbox;
     display: flex;
@@ -351,6 +552,9 @@ make the two columns stack on top of each other instead of next to each other */
   clear: both;
 }
 
+.row {
+  display: -webkit-flex;
+  -webkit-flex-wrap: wrap;
 /* Responsive layout() */
 
 .merchrow{
