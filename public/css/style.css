@@ -20,7 +20,7 @@
 }
 
 .carousel{
-	padding: 190px;
+	padding: 50px;
 	border:10px solid transparent;
 	border-image: 50 round;
 }
@@ -54,6 +54,10 @@
 	padding: 15px
 }
 
+h1{
+	text-align:center;
+	padding: 100px;
+}
 
 body{
 	background-image: linear-gradient(#D4EEDC,#eaea45b5);
