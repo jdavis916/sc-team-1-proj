@@ -489,58 +489,81 @@ img {
 }
 
 /* Profile Page */
-.container{
-	padding-top: 30px;
+.pgProfiole container-fluid{
+	padding-top: 50px;
 	text-align: center;
 	width: 100%;
-	padding-left: 15px;
-	padding-right: 15px;
-	margin-left: auto;
-	margin-right: auto;
+	padding-left: 20px;
+	padding-right: 20px;
+
 }
 
-.row{
-	display: inline-flex;
+.pgProfile row{
+	display: flex;
+	flex-direction: row;
 	flex-wrap: wrap;
-	
+	width: 100%;
+	margin-right: wrap; 
+	margin-right: -329px;
+	margin-left: -18px;
+	margin-bottom: 58px;
 }
 
-.column {
-    float: center;
+.pgProfile column {
+    display: flex;
+    flex: 100%;
+    flex: 1;
+    flex-direction: column;
     padding: 10px;
 }
 
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
- }
-
-.column-left {
-    width: 30%
-    padding-top: 55px;
-    /*padding-right: -19px; */
-  
-}
-
-.column-right {
-    width: 70%;
-    padding-top: 90px;
-    /*padding-right: 50px; */
-} 
-
- Responsive layout() 
-@media screen and (min-width: 576px,max-width: 540px;){
-.column-left, .column-right {
+/* Responsive layout - when the screen is less than 600px wide, 
+make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
     width: 100%;
   }
 }
 
+.pgProfile h1{
+	text-align:center;
+	padding: 50px;
+}
 
+/*.column-left {
+    padding-top: 55px;
+    /*padding-right: -19px; */
+   /*display: table-cell;
+    vertical-align: left;
+} */
+
+/*
+.column-right {
+    width: 70%;
+    padding-top: 90px;
+    /*padding-right: 50px; */
+    /*vertical-align: right;
+} 
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 .row {
   display: -webkit-flex;
   -webkit-flex-wrap: wrap;
+/* Responsive layout() */
+
+.merchrow{
+	display: -webkit-inline-box;
+	display: block;
+}
+
+.row2{
+	padding: 19px;
 }
 
 @media screen and (min-width: 576px){
@@ -552,20 +575,54 @@ img {
 }    
 
 
-.h-1, .h-2{
-	margin-top: 30px;
-	font-size: 2.5rem;
+..pgProfile h-1, h-2{
+	margin-top: 45px;
+	font-size: 3.5rem;
 	margin-bottom: 1.5rem;
 	font-weight: 500;
 	line-height: 1.2;
 }
 
-.img{
+.imgGroup{
+	display: block;
+	margin: 0px;
+	padding-left: 126px;
+	position: relative;
+	height: auto;
+	max-width: auto;
+	overflow-y: hidden;
+	overflow-x: auto;
+	word-wrap: normal;
+	white-space: nowrap;
+	justify-content: space-between;
+}
+
+.Images{
+	display: inline;
+	margin: 0px;
+	padding: 0px;
 	vertical-align: middle;
 }
 
+.pgProfile p{
+	outline-style: none;
+    white-space: normal;
+    font-family: monospace;
+    text-align: center;
+    margin-bottom: 1rem;
+
+}
+
+.pgProfile input{
+	width: 100%;
+	padding: 3px;
+	border:5px outset #80c18f;
+	margin: 8px;
+	border-radius: inherit;
+}
+
 /* image shaking animation*/
-.img1:hover{
+.Images:hover{
     animation: shake 0.5s;
     animation-iteration-count: infinite;
 }
@@ -584,25 +641,132 @@ img {
   100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
-.p2{
-	outline-style: none;
-    white-space: pre;
-    font-family: fantasy;
-    text-align: center;
-    font-size: x-large;
-    margin-bottom: 1rem;
-}
-
-.input{
-	width:100%;
-	padding: 5px;
-	border:2px solid #3E7E51;
-	margin: 8px 0;
-	border-radius: inherit;
-}
-
 .button:focus{
 	border-radius: 15rem;
 	background-color: #D4EEDC;
 }
 /* ^ Profile Page ^ */
+
+/* Tool View Page */
+.cal-body {
+  width: 500px;
+  margin: 4% auto;
+  font-family: 'Source Sans Pro', sans-serif;
+  letter-spacing: 5px;
+  font-size: 1.8rem;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.calculator {
+  padding: 20px;
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 1px;
+  background-color: black;
+}
+
+.cal-input {
+  border: 1px solid #ddd;
+  border-radius: 1px;
+  height: 80px;
+  padding-right: 15px;
+  padding-top: 10px;
+  text-align: right;
+  margin-right: 6px;
+  font-size: 2.5rem;
+  overflow-x: auto;
+  transition: all .2s ease-in-out;
+  color: white;
+}
+
+.cal-input:hover {
+  border: 1px solid #bbb;
+  -webkit-box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+.cal-buttons {}
+
+.cal-operators {}
+
+.cal-operators div {
+  display: inline-block;
+  border: 1px solid #bbb;
+  border-radius: 1px;
+  width: 80px;
+  text-align: center;
+  padding: 10px;
+  margin: 20px 4px 10px 0;
+  cursor: pointer;
+  background-color: #ddd;
+  transition: border-color .2s ease-in-out, background-color .2s, box-shadow .2s;
+}
+
+.cal-operators div:hover {
+  background-color: #ddd;
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  border-color: #aaa;
+}
+
+.cal-operators div:active {
+  font-weight: bold;
+}
+
+.cal-leftPanel {
+  display: inline-block;
+}
+
+.cal-numbers div {
+  display: inline-block;
+  border: 1px solid #ddd;
+  border-radius: 1px;
+  width: 80px;
+  text-align: center;
+  padding: 10px;
+  margin: 10px 4px 10px 0;
+  cursor: pointer;
+  background-color: #f9f9f9;
+  transition: border-color .2s ease-in-out, background-color .2s, box-shadow .2s;
+}
+
+.cal-numbers div:hover {
+  background-color: #f1f1f1;
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  border-color: #bbb;
+}
+
+.cal-numbers div:active {
+  font-weight: bold;
+}
+
+.cal-equal {
+  display: inline-block;
+  border: 5px outset #fbd461;
+  border-radius: 1px;
+  width: 17%;
+  text-align: center;
+  padding: 127px 10px;
+  margin: 10px 6px 10px 0;
+  vertical-align: bottom;
+  cursor: pointer;
+  color: #FFF;
+  background-color: #7e4fda;
+  transition: all .2s ease-in-out;
+}
+
+.cal-equal:hover {
+  background-color: #fbd461;
+  border: 5px outset #7e4fda;
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  border-color: #7e4fda;
+}
+
+.cal-equal:active {
+  font-weight: bold;
+}
+/* ^ Tool View Page ^ */
