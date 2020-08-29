@@ -189,17 +189,14 @@ h2{
 }
 
 /*-------------------------------------dice-----------------------------------------------*/
-#status{
-  clear:left;
-}
+
 div.dice{
-  float: left;
-  width: 32px;
-  background: #f5f5f5;
-  border:#999 1px solid;
-  padding: 10px;
-  font-size: 24px;
-  text-align: center;
-  margin: 5px;
+  height: 100px;
+  width: 100px;
+  padding: 50px;
+  margin: 50px auto;
+  border: 1px solid gray;
+  border-radius: 10px;  
+  font-size:80px;
 }
   /*----------------------------------end of dice-----------------------------------------------*/
