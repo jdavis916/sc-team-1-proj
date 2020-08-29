@@ -185,7 +185,7 @@ h2{
 	text-shadow: 2px 3px #779fff;
 }
 .user.invalid{
-	border-color: red;
+  border-color: red;
 }
 
 /*-------------------------------------dice-----------------------------------------------*/

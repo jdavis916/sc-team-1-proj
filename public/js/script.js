@@ -8,20 +8,23 @@ const email = document.getElementById('email');
 const password = document.getElementById('password');
 const confirmPass = document.getElementById('confirmpass');
 const dob = document.getElementById('dob');
-const form = document.getElementById('form');
+const form = document.getElementById('formSignUp');
 const btnSubmit = document.getElementById('signup-submit');
 const green = '#4CAF50';
 const red = 'F44336';
 
-btnSubmit.addEventListener('click', function(){
-  validate(); 
+btnSubmit.addEventListener('click', function(e){
+  e.preventDefault();
+  validateFirstName(); 
    
 });
 
-function validate(){
-  console.log('validateClicked');
+function validateFirstName(){
+  console.log('validateFirstNameClicked');
+  if(checkForSpaces(firstName)) return;
   if(isEmpty(firstName)) return;
   if(!checkIfOnlyLetters(firstName)) return;
+  form.submit();
   return true;
 }
 
@@ -57,6 +60,7 @@ function checkIfOnlyLetters(field){
         return false;
     }
 }
+
 //end of signup page//
 
 //--------------------------------------------------dice------------------------------------------------------------//
