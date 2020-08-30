@@ -15,8 +15,9 @@ const red = 'F44336';
 
 btnSubmit.addEventListener('click', function(e){
   e.preventDefault();
+  validateUserNAme()
   validateFirstName(); 
-   
+  
 });
 
 function validateFirstName(){
@@ -24,6 +25,14 @@ function validateFirstName(){
   if(checkForSpaces(firstName)) return;
   if(isEmpty(firstName)) return;
   if(!checkIfOnlyLetters(firstName)) return;
+  form.submit();
+  return true;
+}
+function validateUserNAme(){
+  console.log('validateFirstNameClicked');
+  if(checkForSpaces(userName)) return;
+  if(isEmpty(userName)) return;
+  if(!checkIfOnlyLetters(userName)) return;
   form.submit();
   return true;
 }
