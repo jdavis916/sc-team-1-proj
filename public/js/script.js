@@ -57,12 +57,12 @@ function isEmpty(value){
 function setInvalid(field, message){
     field.classList.add("invalid");
     field.nextElementSibling.innerhtml = message;
-    field.nextElementSibling.style.color;
+    field.nextElementSibling.style.color = red;
 }
 function setValid(field){
     field.classList.remove("invalid");
     field.nextElementSibling.innerhtml = '';
-    field.nextElementSibling.style.color;
+    field.nextElementSibling.style.color = green;
 }
 function checkIfOnlyLetters(field){
     if(/^[a-zA-Z ]+$/.test(field.value)){
@@ -92,9 +92,6 @@ function rollDice(){
   var die1 = document.getElementById("die1");
   var die2 = document.getElementById("die2");
   var die3 = document.getElementById("die3");
-  var status = document.getElementById("status");
-  var amtOfDice = document.getElementById("amtOfDice");
-  var sidePerDie = document.getElementById("sidePerDie");
 
   // dice 1-6 //
   var d1 = Math.floor(Math.random() * 6) + 1;
@@ -105,4 +102,9 @@ function rollDice(){
   die3.innerHTML = d3;
 }
 
+function rotateImage() {
+  document.getElementById("die1").classList.toggle("dice-animation");
+  document.getElementById("die2").classList.toggle("dice-animation");
+  document.getElementById("die3").classList.toggle("dice-animation");
+}
   //----------------------------------------------end of dice--------------------------------------------//

@@ -190,13 +190,48 @@ h2{
 
 /*-------------------------------------dice-----------------------------------------------*/
 
-div.dice{
+.dice{
   height: 100px;
   width: 100px;
-  padding: 50px;
+  padding: 5px;
   margin: 50px auto;
-  border: 1px solid gray;
+  border: 2px solid #3E7E51;
   border-radius: 10px;  
-  font-size:80px;
+  font-size:55px;
+  text-align: center;
+  background-color: white;
+}
+.space-across-dice{
+	display: grid;
+	grid-template-columns: auto auto auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto auto;
+}
+#die1{
+  grid-column: 3 / 3;
+}
+#die2{
+  grid-column: 4 / 4;
+}
+#die3{
+  grid-column: 5 / 5;
+}
+.dice-animation{
+  animation: rotation 0.1s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.dice-button{
+  border: 2px solid #3E7E51;
+  margin-left: 40%;
+  width: 20%;
+  padding: 10px;
 }
   /*----------------------------------end of dice-----------------------------------------------*/
