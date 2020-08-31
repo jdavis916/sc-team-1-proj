@@ -404,19 +404,26 @@ img {
     border-style: none;
     padding: inherit;
 }
-/*-----------------------------------------------*/
+/*----------------------Sign up-------------------------*/
+.boxInput{
+	width:100%;
+	padding: 5px;
+	border:2px solid #3E7E51;
+	margin: 8px 0;
+	border-radius: inherit;
+}
 .social-signin-facebook{
 	border:2px solid #3E7E51;
-	padding: 10px;
+	padding: 5px;
 }
 
 .social-signin-twitter{
 	border:2px solid #3E7E51;
-	padding: 10px;
+	padding: 5px;
 }
 .social-signin-google{
 	border:2px solid #3E7E51;
-	padding: 10px;
+	padding: 5px;
 }
 .space-across{
 	display: grid;
@@ -468,17 +475,17 @@ img {
 	}
 	.social-signin-facebook{
 		border:2px solid #3E7E51;
-		padding: 10px;
+		padding: 5px;
 		width: 100%;
 	}
 	.social-signin-twitter{
 		border:2px solid #3E7E51;
-		padding: 10px;
+		padding: 5px;
 		width: 100%;
 	}
 	.social-signin-google{
 		border:2px solid #3E7E51;
-		padding: 10px;
+		padding: 5px;
 		width: 100%;
 	}
 }
@@ -487,6 +494,10 @@ img {
 	color: solid #3E7E51;
 	outline-color: #9c27b0/*purple*/;
 }
+.user.invalid{
+  border-color: red;
+}
+/*--------------------------------------end of sign up----------------------------------*/
 
 /* Profile Page */
 .pgProfiole container-fluid{
@@ -799,3 +810,15 @@ make the two columns stack on top of each other instead of next to each other */
 }
 
 /* end of css alignment fixes -Steven */
+/*-------------------------------------dice-----------------------------------------------*/
+
+div.dice{
+  height: 100px;
+  width: 100px;
+  padding: 50px;
+  margin: 50px auto;
+  border: 1px solid gray;
+  border-radius: 10px;  
+  font-size:80px;
+}
+  /*----------------------------------end of dice-----------------------------------------------*/
