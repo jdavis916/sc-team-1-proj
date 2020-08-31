@@ -100,15 +100,15 @@ h2{
 
 .social-signin-facebook{
 	border:2px solid #3E7E51;
-	padding: 10px;
+	padding: 5px;
 }
 .social-signin-twitter{
 	border:2px solid #3E7E51;
-	padding: 10px;
+	padding: 5px;
 }
 .social-signin-google{
 	border:2px solid #3E7E51;
-	padding: 10px;
+	padding: 5px;
 }
 .space-across{
 	display: grid;
@@ -160,17 +160,17 @@ h2{
 	}
 	.social-signin-facebook{
 		border:2px solid #3E7E51;
-		padding: 10px;
+		padding: 5px;
 		width: 100%;
 	}
 	.social-signin-twitter{
 		border:2px solid #3E7E51;
-		padding: 10px;
+		padding: 5px;
 		width: 100%;
 	}
 	.social-signin-google{
 		border:2px solid #3E7E51;
-		padding: 10px;
+		padding: 5px;
 		width: 100%;
 	}
 }

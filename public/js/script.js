@@ -15,35 +15,39 @@ const red = 'F44336';
 
 btnSubmit.addEventListener('click', function(e){
   e.preventDefault();
-  validateUserNAme()
-  validateFirstName(); 
-  
+  check();
+
 });
+
+function check(){
+  if(validateUserNAme() === true, validateFirstName() === true){
+    form.submit();
+  }
+}
 
 function validateFirstName(){
   console.log('validateFirstNameClicked');
   if(checkForSpaces(firstName)) return;
   if(isEmpty(firstName)) return;
   if(!checkIfOnlyLetters(firstName)) return;
-  form.submit();
+  //if(checkLength(firstName, 5, 15,)) return;
   return true;
 }
 function validateUserNAme(){
   console.log('validateFirstNameClicked');
   if(checkForSpaces(userName)) return;
   if(isEmpty(userName)) return;
-  if(!checkIfOnlyLetters(userName)) return;
-  form.submit();
+  //if(checkLength(userName, 5, 15)) return;
   return true;
 }
 
 function checkForSpaces(field){
     if(isEmpty(field.value.trim())){
-        setInvalid(field, `${field.name} must not be empty`);
-        return true;
+      setInvalid(field, `${field.name} must not be empty`);
+      return true;
     } else{
-        setValid(field);
-        return false;
+      setValid(field);
+      return false;
     }
 }
 function isEmpty(value){
@@ -53,12 +57,12 @@ function isEmpty(value){
 function setInvalid(field, message){
     field.classList.add("invalid");
     field.nextElementSibling.innerhtml = message;
-    field.nextElementSibling.style.color = red;
+    field.nextElementSibling.style.color;
 }
 function setValid(field){
     field.classList.remove("invalid");
     field.nextElementSibling.innerhtml = '';
-    field.nextElementSibling.style.color = green;
+    field.nextElementSibling.style.color;
 }
 function checkIfOnlyLetters(field){
     if(/^[a-zA-Z ]+$/.test(field.value)){
@@ -69,6 +73,16 @@ function checkIfOnlyLetters(field){
         return false;
     }
 }
+
+/*function checkLength(field, mnlen, mxlen){ 
+    if(field.length < mnlen || field.length > mxlen){ 
+    alert("Please input the userid between " +mnlen+ " and " +mxlen+ " characters");
+    return false;
+  }else{ 
+    alert("accepted")
+    return true;
+    }
+}*/
 
 //end of signup page//
 
