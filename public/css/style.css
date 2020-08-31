@@ -650,7 +650,7 @@ make the two columns stack on top of each other instead of next to each other */
 
 /* Tool View Page */
 .cal-body {
-  width: 500px;
+  width: 416px;
   margin: 4% auto;
   font-family: 'Source Sans Pro', sans-serif;
   letter-spacing: 5px;
@@ -748,7 +748,7 @@ make the two columns stack on top of each other instead of next to each other */
   display: inline-block;
   border: 5px outset #fbd461;
   border-radius: 1px;
-  width: 17%;
+  width: 21%;
   text-align: center;
   padding: 127px 10px;
   margin: 10px 6px 10px 0;
@@ -771,3 +771,31 @@ make the two columns stack on top of each other instead of next to each other */
   font-weight: bold;
 }
 /* ^ Tool View Page ^ */
+
+/* css alignment fixes -Steven */
+.sTitle{
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.sTitle2{
+  width: 35%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.cardText{
+  text-align: center;
+  justify-content: center;
+  /*outline-style: groove; */
+  border-bottom: solid;
+  border-radius: 50px;
+  background-image: linear-gradient(45deg,#D4EEDC, #3e7e51);
+  width: 340px;
+}
+.scolumn{
+  width: 100%;
+  margin-left: 100px;
+  margin-right: auto;
+}
+
+/* end of css alignment fixes -Steven */
