@@ -567,15 +567,7 @@ make the two columns stack on top of each other instead of next to each other */
   margin-left: auto;
   margin-right: auto;
 }
-.cardText{
-  text-align: center;
-  justify-content: center;
-  /*outline-style: groove; */
-  border-bottom: solid;
-  border-radius: 50px;
-  background-image: linear-gradient(45deg,#D4EEDC, #3e7e51);
-  width: 340px;
-}
+
 .scolumn{
   width: 100%;
   margin-left: 100px;
