@@ -45,6 +45,9 @@
     height: 100%;
   }
 
+input{
+	font-family: fantasy;
+}
 
 h1{
 	text-align:center;
@@ -100,6 +103,7 @@ p{
 	font-family: fantasy;
 	text-align: center;
 	font-size: x-large;
+	content: contain;
 } 
 img {
     vertical-align: middle;
@@ -216,6 +220,7 @@ iframe{
 	border:2px solid #3E7E51;
 	width: 100%;
 	margin: 8px 0;
+	font-family: fantasy;
 }
 .vertical{
 	display: block;
