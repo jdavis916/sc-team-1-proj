@@ -132,8 +132,9 @@ footer .rowsection{
 }
 
 p{
-	padding: 100px;
-	outline-style: none;
+	padding: 50px;
+  white-space: pre;
+/*	outline-style: none;*/
 	font-family: fantasy;
 	text-align: center;
 	font-size: x-large;
@@ -159,7 +160,7 @@ iframe{
 	}
 }
 
-/*
+
 @media all and (min-width: 576px){
 .container .container-sm {
     max-width: none;
@@ -170,7 +171,7 @@ iframe{
     max-width: none;
 	}
 }
-*/
+
 
 .SectionCardContainer .card{
   display: -webkit-flex;
