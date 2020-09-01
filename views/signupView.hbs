@@ -2,22 +2,23 @@
   <div class="vertical">
     <h1>Sign up</h1>
 
-    <form name="form" action="#" <!--method="post" onsubmit="validate()">--></form>
-      <input type="text" name="username" placeholder="Username" class="user, input" required/>
-      <input type="text" name="Name" placeholder="Name" class="user, input" required/>
-      <input type="text" name="email" placeholder="E-mail" class="user, input" required/>
-      <input type="password" name="password" placeholder="Password" class="user, input" required/>
-      <input type="password" name="password2" placeholder="Retype password" class="user, input" required/>
-      <input type="text" name="Date Of Birth" placeholder="DOB" class="user, input" required/>
-      <input type="submit" name="signup_submit" value="Sign me up" class="rightside"/>
+    <form name="form" id="formSignUp" action="#" method="POST" onsubmit="validateFirstName()">
+      <input type="text" name="Username" id="username" placeholder="Username" class="user boxInput" />
+      <input type="text" name="Firstname" id="firstname" placeholder="First Name" class="user boxInput" />
+      <input type="text" name="Lastname" id="lastname" placeholder="Last Name" class="user boxInput" />
+      <input type="text" name="Email" id="email" placeholder="E-mail" class="user boxInput" />
+      <input type="password" name="Password" id="password" placeholder="Password" class="user boxInput" />
+      <input type="password" name="Confirmpass" id="confirmpass" placeholder="Retype password" class="user boxInput" />
+      <input type="text" name="Dob" id="dob" placeholder="Date of Birth (mm/dd/yyyy)" class="user boxInput" />
+      <input type="submit" name="Signup-submit" id="signup-submit" value="Sign me up" class="rightside"/>
     </form>
     
   </div>
   &nbsp;
   <div class="sizer">
-    <div class="facebook"><button class="social-signin-facebook"><img src="img/facebook.png"; width="25" height="25";/> Sign up with facebook</button></div>
-    <div class="twitter"><button class="social-signin-twitter"><img src="img/twitter.png"; width="25" height="25";/> Sign up with Twitter</button></div>
-    <div class="google"><button class="social-signin-google"><img src="img/google.png"; width="25" height="25";/> Sign up with Google</button></div>
+    <div class="facebook"><button class="social-signin-facebook"><img src="img/facebook.png"; width="35" height="35";/> Sign up with facebook</button></div>
+    <div class="twitter"><button class="social-signin-twitter"><img src="img/twitter.png"; width="35" height="35";/> Sign up with Twitter</button></div>
+    <div class="google"><button class="social-signin-google"><img src="img/google.png"; width="35" height="35";/> Sign up with Google</button></div>
   </div>
 </div>
 &nbsp;
