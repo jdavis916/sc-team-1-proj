@@ -735,7 +735,7 @@ make the pictures stack on top of each other instead of next to each other
 .dice-button{
   border: 2px solid #3E7E51;
   margin-left: 40%;
-  width: 20%;
+  width: 100px;
   padding: 10px;
 }
   /*----------------------------------end of dice-----------------------------------------------*/
