@@ -20,7 +20,15 @@ btnSubmit.addEventListener('click', function(e){
 });
 
 function check(){
-  if(validateUserNAme() === true, validateFirstName() === true){
+  if(validateUserName() === true, 
+    validateFirstName() === true,
+    validateLastName() === true,
+    validateEmail() === true,
+    validatePassword() === true,
+    retypePassword() === true,
+    validateDateOfBirth() === true
+  )
+  {
     form.submit();
   }
 }
@@ -30,17 +38,50 @@ function validateFirstName(){
   if(checkForSpaces(firstName)) return;
   if(isEmpty(firstName)) return;
   if(!checkIfOnlyLetters(firstName)) return;
-  //if(checkLength(firstName, 5, 15,)) return;
+  if(checkLength(firstName, 2, 20, "First Name")) return;
   return true;
 }
-function validateUserNAme(){
+function validateUserName(){
   console.log('validateFirstNameClicked');
   if(checkForSpaces(userName)) return;
   if(isEmpty(userName)) return;
-  //if(checkLength(userName, 5, 15)) return;
+  if(checkLength(userName, 6, 20, "Username")) return;
   return true;
 }
-
+function validateLastName(){
+  console.log('validateLastNameClicked');
+  if(checkForSpaces(lastName)) return;
+  if(isEmpty(lastName)) return;
+  if(checkLength(lastName, 2, 20, "Last Name")) return;
+  return true;
+}
+function validateEmail(){
+  console.log('validateEmailClicked');
+  if(checkForSpaces(email)) return;
+  if(isEmpty(email)) return;
+  if(checkEmail(email)) return;
+  return true;
+}
+function validatePassword(){
+  console.log('validatePasswordClicked');
+  if(checkForSpaces(password)) return;
+  if(isEmpty(password)) return;
+  checkLength(password, 8, 30, "Password");
+  return true;
+}
+function retypePassword(){
+  console.log('retypePasswordClicked');
+  if(checkForSpaces(confirmPass)) return;
+  if(isEmpty(confirmPass)) return;
+  if(checkConfirmPass(confirmPass)) return;
+  return true;
+}
+function validateDateOfBirth(){
+  console.log('validateDateOfBirthClicked');
+  if(checkForSpaces(dob)) return;
+  if(isEmpty(dob)) return;
+  return true;
+}
 function checkForSpaces(field){
     if(isEmpty(field.value.trim())){
       setInvalid(field, `${field.name} must not be empty`);
@@ -54,15 +95,11 @@ function isEmpty(value){
     if(value === '') return true;
     return false;
 }
-function setInvalid(field, message){
+function setInvalid(field){
     field.classList.add("invalid");
-    field.nextElementSibling.innerhtml = message;
-    field.nextElementSibling.style.color = red;
 }
 function setValid(field){
     field.classList.remove("invalid");
-    field.nextElementSibling.innerhtml = '';
-    field.nextElementSibling.style.color = green;
 }
 function checkIfOnlyLetters(field){
     if(/^[a-zA-Z ]+$/.test(field.value)){
@@ -74,17 +111,45 @@ function checkIfOnlyLetters(field){
     }
 }
 
-/*function checkLength(field, mnlen, mxlen){ 
-    if(field.length < mnlen || field.length > mxlen){ 
-    alert("Please input the userid between " +mnlen+ " and " +mxlen+ " characters");
-    return false;
-  }else{ 
-    alert("accepted")
-    return true;
-    }
-}*/
+function checkLength(field, minlen, maxlen, name) {
+  var value = field.value;
 
-//end of signup page//
+  if (value.length < minlen || value.length > maxlen) {
+    alert(name+" must be in between " +minlen+ " to "+maxlen+" charcters long.")
+    setInvalid(field);
+    return false; 
+  }
+  setValid(field);
+  return true;
+}
+
+function checkEmail(field){
+    var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  if(field.value.match(mailformat)){
+    document.form.Email.focus();
+    setValid(field);
+    return true;
+  }else{
+    alert("Invalid email address");
+    document.form.Email.focus();
+    setInvalid(field);
+    return false;
+  }
+}
+function checkConfirmPass(field){
+  var pass = document.form.Password.value;
+  var confirm = document.form.Confirmpass.value;
+  if (pass != confirm) {
+    alert("Passwords do not match.");
+    setInvalid(field);
+    return false;
+}
+setValid(field);
+return true;
+}
+
+
+//end of signup page
 
 //--------------------------------------------------dice------------------------------------------------------------//
 
