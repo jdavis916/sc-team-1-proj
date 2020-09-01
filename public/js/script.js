@@ -13,11 +13,13 @@ const btnSubmit = document.getElementById('signup-submit');
 const green = '#4CAF50';
 const red = 'F44336';
 
+if(btnSubmit !== null){
 btnSubmit.addEventListener('click', function(e){
   e.preventDefault();
   check();
 
-});
+  });
+}
 
 function check(){
   if(validateUserName() === true, 
