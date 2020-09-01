@@ -2,12 +2,14 @@
 	height: 400px;
 	overflow: scroll;
 }
+
 .chatBox{
 	display: block;
 	width: 100%;
 	margin-bottom: 10px;
 	padding: 18px;
 }
+
 .btnSend{
 	width: 100%;
 	height: 30px;
@@ -22,30 +24,42 @@
 	text-transform: uppercase;
 	white-space: pre;
 }
+
 .navbar a{
 	float: right;
 	font-size: 15px;
 	color: white;
 	text-align: center;
 	padding: 15px
-
 }
+
 .carousel{
 	padding: 50px;
 	border:10px solid transparent;
 	border-image: 50 round;
 }
+
 .carousel-item.active,
 .carousel-item-next,
 .carousel-item-prev{
 	display: block;
 }
+
 .carousel-inner img {
     width: 100%;
     height: 100%;
   }
+
 .pgHome{
 	contain:content;
+}
+
+.navbar a{
+	float: right;
+	font-size: 15px;
+	color: white;
+	text-align: center;
+	padding: 15px
 }
 
 input{
@@ -68,27 +82,32 @@ h1{
 h2{
 	border-bottom: groove;
 	font-size: 2rem;
-    
-    border-bottom: groove;
-    
-     float: right;
+  border-bottom: groove;    
+  float: right;
 }
+
 h3 {
     font-size: 2rem;
     padding: 30px;
     border-bottom: groove;
     max-width: min-content;
 }
+
 h4 {
     font-size: 2rem;
     padding: 30px;
     border-bottom: groove;
     max-width: min-content;
 }
+
 /*Header Animation*/
 @keyframes color {
 	from{color: red;}
 	to {color: yellow;}
+}
+
+.section .Storerow{
+	display: table;
 }
 
 body{/*body gradient*/
@@ -101,14 +120,30 @@ footer .rowsection{
 	text-align: center;	
 }
 
+.homePg .container{
+  display: inline-flex;
+}
+
+.homePg .row{
+  display: flex;
+}
+
+.homePg .column{
+  flex: 33%;
+  padding: 5px;
+  display: contents;
+}
+
 p{
 	padding: 50px;
-	white-space: pre;
+  white-space: pre;
+/*	outline-style: none;*/
 	font-family: fantasy;
 	text-align: center;
 	font-size: x-large;
 	content: contain;
 } 
+
 img {
     vertical-align: middle;
     border-style: none;
@@ -128,6 +163,7 @@ iframe{
 	}
 }
 
+
 @media all and (min-width: 576px){
 .container .container-sm {
     max-width: none;
@@ -145,6 +181,17 @@ iframe{
     max-width:none;
 	}
 }
+
+.SectionCardContainer .card{
+  display: -webkit-flex;
+  position: relative;
+  justify-content: center;
+  -webkit-justify-content: center;
+  padding: 50px;
+  margin: 25px;
+  display: table-cell;
+}
+
 /*^----------media query---------^*/
 .col-4{
 	max-width: 100px;
@@ -152,18 +199,52 @@ iframe{
 .col{
 	padding: 19px;
 }
+  
 .col-12{
 	padding: 50px;
 	display: contents;
 }
+  
 .card{
 	background-color: #D4EEDC;
 }
+  
  .card-wrapper {
     height: 100%;
     box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
     transition: box-shadow 0.3s;
    -webkit-flex:1;
+}
+
+#card2{
+	padding: 50px;
+  margin: 40px;
+}
+
+.col-auto {
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: auto;
+    max-width: 100%;
+    padding: 50px;
+} 
+ 
+h2{
+  text-align: center;
+  padding-top: 100px;
+  border-bottom: groove; 
+}
+
+h3{
+    font-size: 2rem;
+    border-bottom: groove;
+    max-width: min-content;
+}
+
+h4{
+    font-size: 2rem;
+    border-bottom: groove;
+    max-width: fit-content;
 }
 
 .card-img, .card-img-bottom {
@@ -184,33 +265,55 @@ iframe{
     animation-direction: alternate-reverse;
     animation-fill-mode: both;
 }
+  
 @keyframes background {
 	from{background-color:#D4EEDC;}
 	to {background-color:#3e7e51;}
 }
+
 .cardAlt{/*card background homePg*/
     position: relative;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-direction: column;
+    flex-direction: ;
+    min-width: 0;
+    word-wrap: break-word;
     background-color: #b17246;
     background-clip: border-box;
     border-radius: 50rem;
     padding: 50px;
     background-image: linear-gradient(#D4EEDC,#3e7e51);
 }
+
+img {
+    vertical-align: middle;
+    border-style: none;
+    padding: inherit;
+}
+
+/*----------------------Sign up-------------------------*/
+.boxInput{
+	width:100%;
+	padding: 5px;
+	border:2px solid #3E7E51;
+	margin: 8px 0;
+	border-radius: inherit;
+}
+
 /*-----------------------------------------------*/
 .social-signin-facebook{
 	border:2px solid #3E7E51;
-	padding: 10px;
+	padding: 5px;
 }
 
 .social-signin-twitter{
 	border:2px solid #3E7E51;
-	padding: 10px;
+	padding: 5px;
 }
 .social-signin-google{
 	border:2px solid #3E7E51;
-	padding: 10px;
+	padding: 5px;
 }
 .space-across{
 	display: grid;
@@ -263,17 +366,17 @@ iframe{
 	}
 	.social-signin-facebook{
 		border:2px solid #3E7E51;
-		padding: 10px;
+		padding: 5px;
 		width: 100%;
 	}
 	.social-signin-twitter{
 		border:2px solid #3E7E51;
-		padding: 10px;
+		padding: 5px;
 		width: 100%;
 	}
 	.social-signin-google{
 		border:2px solid #3E7E51;
-		padding: 10px;
+		padding: 5px;
 		width: 100%;
 	}
 }
@@ -282,8 +385,13 @@ iframe{
 	color: solid #3E7E51;
 	outline-color: #9c27b0/*purple*/;
 }
+.user.invalid{
+  border-color: red;
+}
+/*--------------------------------------end of sign up----------------------------------*/
 
 /* Profile Page */
+/*
 .pgProfiole container-fluid{
 	padding-top: 50px;
 	text-align: center;
@@ -311,7 +419,7 @@ iframe{
     flex-direction: column;
     padding: 10px;
 }
-
+*/
 /* Responsive layout - when the screen is less than 600px wide, 
 make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
@@ -320,12 +428,19 @@ make the two columns stack on top of each other instead of next to each other */
   }
 }
 
+@media screen and (min-width: 576px){
+.col-sm-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 30%;
+  }
+} 
+
 .pgProfile h1{
 	text-align:center;
 	padding: 50px;
 }
 
-/* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
@@ -337,6 +452,7 @@ make the two columns stack on top of each other instead of next to each other */
   -webkit-flex-wrap: wrap;
 /* Responsive layout() */
 }
+
 @media screen and (min-width: 576px){
 .col-sm-6 {
     -ms-flex: 0 0 50%;
@@ -345,8 +461,7 @@ make the two columns stack on top of each other instead of next to each other */
   }
 }    
 
-
-..pgProfile h-1, h-2{
+.pgProfile h-1, h-2{
 	margin-top: 45px;
 	font-size: 3.5rem;
 	margin-bottom: 1.5rem;
@@ -356,13 +471,15 @@ make the two columns stack on top of each other instead of next to each other */
 
 .imgGroup{
 	display: block;
-	margin: 0px;
-	padding-left: 126px;
+  float: left;
+	margin-left: auto;
+  margin-right: auto;
+	/*padding-left: 126px; */
 	position: relative;
 	height: auto;
 	max-width: auto;
-	overflow-y: hidden;
-	overflow-x: auto;
+	/*overflow-y: hidden;
+	overflow-x: auto; */
 	word-wrap: normal;
 	white-space: nowrap;
 	justify-content: space-between;
@@ -384,8 +501,14 @@ make the two columns stack on top of each other instead of next to each other */
 
 }
 
+/*.pgProfile form{
+  direction: rtl;
+} */
+
 .pgProfile input{
-	width: 100%;
+	display: block;
+  /*direction: ltr; */
+  width: 100%;
 	padding: 3px;
 	border:5px outset #80c18f;
 	margin: 8px;
@@ -420,7 +543,7 @@ make the two columns stack on top of each other instead of next to each other */
 
 /* Tool View Page */
 .cal-body {
-  width: 500px;
+  width: 416px;
   margin: 4% auto;
   font-family: 'Source Sans Pro', sans-serif;
   letter-spacing: 5px;
@@ -518,7 +641,7 @@ make the two columns stack on top of each other instead of next to each other */
   display: inline-block;
   border: 5px outset #fbd461;
   border-radius: 1px;
-  width: 17%;
+  width: 21%;
   text-align: center;
   padding: 127px 10px;
   margin: 10px 6px 10px 0;
@@ -541,3 +664,70 @@ make the two columns stack on top of each other instead of next to each other */
   font-weight: bold;
 }
 /* ^ Tool View Page ^ */
+
+/*---------merch page----------*/
+
+.flex-container{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 50px;
+  margin-left: 126px;
+}
+
+.flex-container > div {
+  background-color: #2f74434f;
+  width: 270px;
+  margin: 10px;
+  text-align: center;
+  line-height: 39px;
+  font-size: 30px;
+}
+
+.card-img{
+  margin-left: -50px;
+}
+
+.merchrow{
+  display: -webkit-inline-box;
+  display: block;
+}
+
+.merch-wrapper{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* css alignment fixes -Steven */
+.sTitle{
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sTitle2{
+  width: 35%;
+}
+
+.cardText{
+  margin-left: 50px;
+}
+
+.scolumn{
+  width: 100%;
+  margin-left: 100px;
+  margin-right: auto;
+}
+
+/* end of css alignment fixes -Steven */
+/*-------------------------------------dice-----------------------------------------------*/
+
+div.dice{
+  height: 100px;
+  width: 100px;
+  padding: 50px;
+  margin: 50px auto;
+  border: 1px solid gray;
+  border-radius: 10px;  
+  font-size:80px;
+}
+  /*----------------------------------end of dice-----------------------------------------------*/
