@@ -64,7 +64,8 @@ input{
 
 h1{
 	text-align:center;
-	text-align-last: justify;
+	text-align-last: auto;
+  text-shadow: 2px 3px rgba(116, 160, 208, 0.5);
 	padding: 100px;
 	font-variant: small-caps;
 	/*Header Animation*/
@@ -378,67 +379,41 @@ img {
 }
 /*--------------------------------------end of sign up----------------------------------*/
 
-/* Profile Page */
-/*
-.pgProfiole container-fluid{
-	padding-top: 50px;
-	text-align: center;
-	width: 100%;
-	padding-left: 20px;
-	padding-right: 20px;
+/*========================Profile Page=================================================== */
+	
+/* Responsive layout - when the screen is less than 1200px wide, 
+make the pictures stack on top of each other instead of next to each other 
 
+-small laptop devices  */
+@media screen and (max-width: 982px) {
+  .Images {
+    width: 33.33333%
+  }
 }
 
-.pgProfile row{
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	width: 100%;
-	margin-right: wrap; 
-	margin-right: -329px;
-	margin-left: -18px;
-	margin-bottom: 58px;
+/* tablet devices  */
+@media screen and (max-width: 765px) {
+  .Images {
+    width: 49.99999%
+  }
 }
 
-.pgProfile column {
-    display: flex;
-    flex: 100%;
-    flex: 1;
-    flex-direction: column;
-    padding: 10px;
-}
-*/
-/* Responsive layout - when the screen is less than 600px wide, 
-make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
+/* phones */
+@media only screen and (max-width: 340px) {
+  .responsive {
     width: 100%;
   }
 }
 
-@media screen and (min-width: 576px){
-.col-sm-6 {
-    -ms-flex: 0 0 50%;
-    flex: 0 0 50%;
-    max-width: 30%;
-  }
-} 
-
 .pgProfile h1{
 	text-align:center;
-	padding: 50px;
+	padding: 70px;
 }
 
 .row:after {
   content: "";
   display: table;
   clear: both;
-}
-
-.row {
-  display: -webkit-flex;
-  -webkit-flex-wrap: wrap;
-/* Responsive layout() */
 }
 
 @media screen and (min-width: 576px){
@@ -458,11 +433,8 @@ make the two columns stack on top of each other instead of next to each other */
 }
 
 .imgGroup{
-	display: block;
+	display: inline-block;
   float: left;
-	margin-left: auto;
-  margin-right: auto;
-	/*padding-left: 126px; */
 	position: relative;
 	height: auto;
 	max-width: auto;
@@ -474,9 +446,9 @@ make the two columns stack on top of each other instead of next to each other */
 }
 
 .Images{
-	display: inline;
-	margin: 0px;
-	padding: 0px;
+	display: inline-block;
+	margin: 2px;
+	padding: 5px;
 	vertical-align: middle;
 }
 
@@ -527,9 +499,9 @@ make the two columns stack on top of each other instead of next to each other */
 	border-radius: 15rem;
 	background-color: #D4EEDC;
 }
-/* ^ Profile Page ^ */
+/* ===================^ Profile Page ^========================================================= */
 
-/* Tool View Page */
+/* ====================Tool View Page========================================================*/
 .cal-body {
   width: 416px;
   margin: 4% auto;
@@ -627,25 +599,25 @@ make the two columns stack on top of each other instead of next to each other */
 
 .cal-equal {
   display: inline-block;
-  border: 5px outset #fbd461;
+  border: 5px outset #f8f9fa;
   border-radius: 1px;
   width: 21%;
+  height: 320px;
   text-align: center;
   padding: 127px 10px;
   margin: 10px 6px 10px 0;
   vertical-align: bottom;
   cursor: pointer;
   color: #FFF;
-  background-color: #7e4fda;
+  background-color: #e5ef83;
   transition: all .2s ease-in-out;
 }
 
 .cal-equal:hover {
-  background-color: #fbd461;
-  border: 5px outset #7e4fda;
+  background-color: #7e4fda;
+  border: 5px outset #e5ef83;
   -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
-  border-color: #7e4fda;
 }
 
 .cal-equal:active {
@@ -653,7 +625,7 @@ make the two columns stack on top of each other instead of next to each other */
 }
 /* ^ Tool View Page ^ */
 
-/*---------merch page----------*/
+/*-----------------------------merch page--------------------------*/
 
 .flex-container{
   display: flex;
