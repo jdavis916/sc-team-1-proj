@@ -822,7 +822,8 @@ input{
 h1{
 
 	text-align:center;
-	text-align-last: justify;
+	text-align-last: auto;
+  text-shadow: 2px 3px rgba(116, 160, 208, 0.5);
 	padding: 100px;
 	font-variant: small-caps;
 	/*Header Animation*
@@ -954,7 +955,6 @@ iframe{
   margin: 40px;
 }
 
-<<<<<<< Updated upstream
 .col-auto {
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
@@ -962,10 +962,7 @@ iframe{
     max-width: 100%;
     padding: 50px;
 } 
- 
 
-=======
->>>>>>> Stashed changes
 .card-img, .card-img-bottom {
     border-bottom-right-radius: calc(.25rem - 1px);
     border-bottom-left-radius: calc(.25rem - 1px);
@@ -1005,11 +1002,7 @@ iframe{
     display: flex;
     -ms-flex-direction: column;
     flex-direction: ;
-<<<<<<< Updated upstream
     min-width: 3000px;
-=======
-    min-width: 2000px;
->>>>>>> Stashed changes
     word-wrap: break-word;
     background-color: #b17246;
     background-clip: border-box;
@@ -1062,7 +1055,11 @@ img {
 	grid-column: 5 / 5;
 }
 .user{
+  width:100%;
 	padding: 10px;
+	border:2px solid #3E7E51;
+	margin: 8px 0;
+	border-radius: inherit;
 }
 .bigbox{
 	padding: 50px;
@@ -1122,26 +1119,23 @@ img {
 }
 /*--------------------------------------end of sign up----------------------------------*/
 
-/* Profile Page */
-/*
-.pgProfiole container-fluid{
-	padding-top: 50px;
-	text-align: center;
-	width: 100%;
-	padding-left: 20px;
-	padding-right: 20px;
+/*========================Profile Page=================================================== */
+	
+/* Responsive layout - when the screen is less than 1200px wide, 
+make the pictures stack on top of each other instead of next to each other 
 
+-small laptop devices  */
+@media screen and (max-width: 982px) {
+  .Images {
+    width: 33.33333%
+  }
 }
 
-.pgProfile row{
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	width: 100%;
-	margin-right: wrap; 
-	margin-right: -329px;
-	margin-left: -18px;
-	margin-bottom: 58px;
+/* tablet devices  */
+@media screen and (max-width: 765px) {
+  .Images {
+    width: 49.99999%
+  }
 }
 
 .pgProfile column {
@@ -1156,21 +1150,17 @@ img {
 make the two columns stack on top of each other instead of next to each other *
 @media screen and (max-width: 600px) {
   .column {
+
+/* phones */
+@media only screen and (max-width: 340px) {
+  .responsive {
     width: 100%;
   }
 }
 
-@media screen and (min-width: 576px){
-.col-sm-6 {
-    -ms-flex: 0 0 50%;
-    flex: 0 0 50%;
-    max-width: 30%;
-  }
-} 
-
 .pgProfile h1{
 	text-align:center;
-	padding: 50px;
+	padding: 70px;
 }
 
 .row:after {
@@ -1179,9 +1169,7 @@ make the two columns stack on top of each other instead of next to each other *
   clear: both;
 }
 
-
 /* Responsive layout() *
-
 
 @media screen and (min-width: 576px){
 .col-sm-6 {
@@ -1200,7 +1188,7 @@ make the two columns stack on top of each other instead of next to each other *
 }
 
 .imgGroup{
-	display: block;
+	display: inline-block;
   float: left;
 	margin-left: auto;
   margin-right: auto;
@@ -1216,9 +1204,9 @@ make the two columns stack on top of each other instead of next to each other *
 }
 
 .Images{
-	display: inline;
-	margin: 0px;
-	padding: 0px;
+	display: inline-block;
+	margin: 2px;
+	padding: 5px;
 	vertical-align: middle;
 }
 
@@ -1269,7 +1257,7 @@ make the two columns stack on top of each other instead of next to each other *
 	border-radius: 15rem;
 	background-color: #D4EEDC;
 }
-/* ^ Profile Page ^ */
+/* ===================^ Profile Page ^========================================================= */
 
 /* Tool View Page *
 .cal-body {
@@ -1369,25 +1357,25 @@ make the two columns stack on top of each other instead of next to each other *
 
 .cal-equal {
   display: inline-block;
-  border: 5px outset #fbd461;
+  border: 5px outset #f8f9fa;
   border-radius: 1px;
   width: 21%;
+  height: 320px;
   text-align: center;
   padding: 127px 10px;
   margin: 10px 6px 10px 0;
   vertical-align: bottom;
   cursor: pointer;
   color: #FFF;
-  background-color: #7e4fda;
+  background-color: #e5ef83;
   transition: all .2s ease-in-out;
 }
 
 .cal-equal:hover {
-  background-color: #fbd461;
-  border: 5px outset #7e4fda;
+  background-color: #7e4fda;
+  border: 5px outset #e5ef83;
   -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
-  border-color: #7e4fda;
 }
 
 .cal-equal:active {
@@ -1451,13 +1439,58 @@ make the two columns stack on top of each other instead of next to each other *
 /* end of css alignment fixes -Steven *
 /*-------------------------------------dice-----------------------------------------------*
 
-div.dice{
+.dice{
   height: 100px;
   width: 100px;
-  padding: 50px;
+  padding: 5px;
   margin: 50px auto;
-  border: 1px solid gray;
+  border: 2px solid #3E7E51;
   border-radius: 10px;  
-  font-size:80px;
+  font-size:55px;
+  text-align: center;
+  background-color: white;
 }
-  /*----------------------------------end of dice-----------------------------------------------*/
+.space-across-dice{
+	display: grid;
+	grid-template-columns: auto auto auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto auto;
+}
+#die1{
+  grid-column: 3 / 3;
+}
+#die2{
+  grid-column: 4 / 4;
+}
+#die3{
+  grid-column: 5 / 5;
+}
+.dice-animation{
+  animation: rotation 0.1s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.dice-button{
+  border: 2px solid #3E7E51;
+  margin-left: 40%;
+  margin-right: auto;
+  width: 20%;
+  padding: 10px;
+}
+@media screen and (max-width: 475px) {
+	.dice-button{
+    border: 2px solid #3E7E51;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding: 10px;
+  }
+}
+  /*--475--------------------------------end of dice-----------------------------------------------*/
