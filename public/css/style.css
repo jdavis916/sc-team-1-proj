@@ -67,6 +67,7 @@ input{
 }
 
 h1{
+
 	text-align:center;
 	text-align-last: justify;
 	padding: 100px;
@@ -80,6 +81,7 @@ h1{
 }
 
 h2{
+  padding-top: 1px;
 	border-bottom: groove;
 	font-size: 2rem;
   border-bottom: groove;    
@@ -199,6 +201,7 @@ iframe{
   margin: 40px;
 }
 
+<<<<<<< Updated upstream
 .col-auto {
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
@@ -208,6 +211,8 @@ iframe{
 } 
  
 
+=======
+>>>>>>> Stashed changes
 .card-img, .card-img-bottom {
     border-bottom-right-radius: calc(.25rem - 1px);
     border-bottom-left-radius: calc(.25rem - 1px);
@@ -247,7 +252,11 @@ iframe{
     display: flex;
     -ms-flex-direction: column;
     flex-direction: ;
+<<<<<<< Updated upstream
     min-width: 3000px;
+=======
+    min-width: 2000px;
+>>>>>>> Stashed changes
     word-wrap: break-word;
     background-color: #b17246;
     background-clip: border-box;
