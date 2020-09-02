@@ -86,20 +86,6 @@ h2{
   float: right;
 }
 
-h3 {
-    font-size: 2rem;
-    padding: 30px;
-    border-bottom: groove;
-    max-width: min-content;
-}
-
-h4 {
-    font-size: 2rem;
-    padding: 30px;
-    border-bottom: groove;
-    max-width: min-content;
-}
-
 /*Header Animation*/
 @keyframes color {
 	from{color: red;}
@@ -182,15 +168,6 @@ iframe{
 	}
 }
 
-.SectionCardContainer .card{
-  display: -webkit-flex;
-  position: relative;
-  justify-content: center;
-  -webkit-justify-content: center;
-  padding: 50px;
-  margin: 25px;
-  display: table-cell;
-}
 
 /*^----------media query---------^*/
 .col-4{
@@ -207,6 +184,7 @@ iframe{
   
 .card{
 	background-color: #D4EEDC;
+  display: contents;
 }
   
  .card-wrapper {
@@ -229,30 +207,22 @@ iframe{
     padding: 50px;
 } 
  
-h2{
-  text-align: center;
-  padding-top: 100px;
-  border-bottom: groove; 
-}
-
-h3{
-    font-size: 2rem;
-    border-bottom: groove;
-    max-width: min-content;
-}
-
-h4{
-    font-size: 2rem;
-    border-bottom: groove;
-    max-width: fit-content;
-}
 
 .card-img, .card-img-bottom {
     border-bottom-right-radius: calc(.25rem - 1px);
     border-bottom-left-radius: calc(.25rem - 1px);
     padding: 50px;
 }
-
+.card-text{
+  margin-right: 50px;
+  transform: scaleY(1.5);
+}
+#text2{
+   height: 0px;
+    width: 800px;
+    padding-left: 200px;
+    
+}
 .cardText{/*cardtext background*/
     text-align: center;
     justify-content: center;
@@ -277,7 +247,7 @@ h4{
     display: flex;
     -ms-flex-direction: column;
     flex-direction: ;
-    min-width: 0;
+    min-width: 3000px;
     word-wrap: break-word;
     background-color: #b17246;
     background-clip: border-box;
@@ -447,11 +417,9 @@ make the two columns stack on top of each other instead of next to each other */
   clear: both;
 }
 
-.row {
-  display: -webkit-flex;
-  -webkit-flex-wrap: wrap;
+
 /* Responsive layout() */
-}
+
 
 @media screen and (min-width: 576px){
 .col-sm-6 {
@@ -698,7 +666,7 @@ make the two columns stack on top of each other instead of next to each other */
 }
 
 /* css alignment fixes -Steven */
-.sTitle{
+/*.sTitle{
   width: 30%;
   margin-left: auto;
   margin-right: auto;
@@ -706,7 +674,7 @@ make the two columns stack on top of each other instead of next to each other */
 
 .sTitle2{
   width: 35%;
-}
+}*/
 
 .cardText{
   margin-left: 50px;
