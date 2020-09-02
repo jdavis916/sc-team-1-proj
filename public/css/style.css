@@ -1,48 +1,48 @@
 .chatWindow{
-	height: 400px;
-	overflow: scroll;
+  height: 400px;
+  overflow: scroll;
 }
 
 .chatBox{
-	display: block;
-	width: 100%;
-	margin-bottom: 10px;
-	padding: 18px;
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 18px;
 }
 
 .btnSend{
-	width: 100%;
-	height: 30px;
+  width: 100%;
+  height: 30px;
 }
 
 
 /*----------Tyrees Code-----------------*/
 
 .navbar{
-	overflow: hidden;
-	background-color: #3E7E51/*dark green*/;
-	text-transform: uppercase;
-	white-space: pre;
+  overflow: hidden;
+  background-color: #3E7E51/*dark green*/;
+  text-transform: uppercase;
+  white-space: pre;
 }
 
 .navbar a{
-	float: right;
-	font-size: 15px;
-	color: white;
-	text-align: center;
-	padding: 15px
+  float: right;
+  font-size: 15px;
+  color: white;
+  text-align: center;
+  padding: 15px
 }
 
 .carousel{
-	padding: 50px;
-	border:10px solid transparent;
-	border-image: 50 round;
+  padding: 50px;
+  border:10px solid transparent;
+  border-image: 50 round;
 }
 
 .carousel-item.active,
 .carousel-item-next,
 .carousel-item-prev{
-	display: block;
+  display: block;
 }
 
 .carousel-inner img {
@@ -51,74 +51,65 @@
   }
 
 .pgHome{
-	contain:content;
+  contain:content;
 }
 
 .navbar a{
-	float: right;
-	font-size: 15px;
-	color: white;
-	text-align: center;
-	padding: 15px
+  float: right;
+  font-size: 15px;
+  color: white;
+  text-align: center;
+  padding: 15px
 }
 
 input{
-	font-family: fantasy;
+  font-family: fantasy;
 }
 
 h1{
-	text-align:center;
-	text-align-last: auto;
+  font-size: xxx-large;
+  text-align:center;
+  text-align-last: justify;
   text-shadow: 2px 3px rgba(116, 160, 208, 0.5);
-	padding: 100px;
-	font-variant: small-caps;
-	/*Header Animation*/
-	animation-name: color;
-	animation-duration:6s;
-	animation-iteration-count: infinite;
-	animation-direction: alternate-reverse;
-	animation-timing-function: ease-in-out;
+  padding: 100px;
+  font-variant: small-caps;
+  /*Header Animation*/
+  animation-name: color;
+  animation-duration:6s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-timing-function: ease-in-out;
 }
 
 h2{
-	border-bottom: groove;
-	font-size: 2rem;
+  border-bottom: groove;
+  font-size: 2rem;
   border-bottom: groove;    
   float: right;
 }
 
-h3 {
-    font-size: 2rem;
-    padding: 30px;
-    border-bottom: groove;
-    max-width: min-content;
-}
 
-h4 {
-    font-size: 2rem;
-    padding: 30px;
-    border-bottom: groove;
-    max-width: min-content;
-}
 
 /*Header Animation*/
 @keyframes color {
-	from{color: red;}
-	to {color: yellow;}
+  from{color: red;}
+  to {color: yellow;}
 }
 
 .section .Storerow{
-	display: table;
+  display: table;
 }
 
 body{/*body gradient*/
-	background-image: linear-gradient(#D4EEDC,#eaea45b5);
-	background-color:#D4EEDC;
-	color: black;
+  background-image: linear-gradient(#D4EEDC,#eaea45b5);
+  background-color:#D4EEDC;
+  color: black;
 }
 
+
+
 footer .rowsection{
-	text-align: center;	
+  text-align: center; 
 }
 
 .homePg .container{
@@ -136,13 +127,13 @@ footer .rowsection{
 }
 
 p{
-	padding: 50px;
+  padding: 50px;
   white-space: pre;
-/*	outline-style: none;*/
-	font-family: fantasy;
-	text-align: center;
-	font-size: x-large;
-	content: contain;
+/*  outline-style: none;*/
+  font-family: fantasy;
+  text-align: center;
+  font-size: x-large;
+  content: contain;
 } 
 
 img {
@@ -152,62 +143,63 @@ img {
 }
 
 iframe{
-	width: 100%;
-	height: 300px;
-	outline-style: groove;
-	outline-color: #D4EEDC;
+  width: 100%;
+  height: 300px;
+  outline-style: groove;
+  outline-color: #D4EEDC;
 }
 
 /* Responsive layout - media Query*/
 @media all and(max-width: 100%){
-	max-width:100%;
-	}
+  max-width:100%;
+  }
 }
 
 
 @media all and (min-width: 576px){
 .container .container-sm {
     max-width: none;
-	}
+  }
 }
 @media (min-width: 768px){
 .container, .container-md, .container-sm {
     max-width: none;
-	}
+  }
 }
 @media (min-width: 768px){
 .col-md-6 {
    /* -ms-flex: 0 0 50%;*/
     flex: 0 0 50%;*/
     max-width:none;
-	}
-}
-
-.SectionCardContainer .card{
-  display: -webkit-flex;
-  position: relative;
-  justify-content: center;
-  -webkit-justify-content: center;
-  padding: 50px;
-  margin: 25px;
-  display: table-cell;
+  }
 }
 
 /*^----------media query---------^*/
 .col-4{
-	max-width: 100px;
+  max-width: 100px;
 }
 .col{
-	padding: 19px;
+  padding: 19px;
 }
   
 .col-12{
-	padding: 50px;
-	display: contents;
+  padding: 50px;
+  display: contents;
 }
   
 .card{
-	background-color: #D4EEDC;
+  background-color: #D4EEDC;
+  display: contents;
+}
+.card-text{
+  margin-right: 50px;
+  transform: scaleY(1.5);
+}
+#text2{
+   height: 0px;
+    width: 800px;
+    padding-left: 200px;
+    
 }
   
  .card-wrapper {
@@ -218,7 +210,7 @@ iframe{
 }
 
 #card2{
-	padding: 50px;
+  padding: 50px;
   margin: 40px;
 }
 
@@ -236,17 +228,7 @@ h2{
   border-bottom: groove; 
 }
 
-h3{
-    font-size: 2rem;
-    border-bottom: groove;
-    max-width: min-content;
-}
 
-h4{
-    font-size: 2rem;
-    border-bottom: groove;
-    max-width: fit-content;
-}
 
 .card-img, .card-img-bottom {
     border-bottom-right-radius: calc(.25rem - 1px);
@@ -268,8 +250,8 @@ h4{
 }
   
 @keyframes background {
-	from{background-color:#D4EEDC;}
-	to {background-color:#3e7e51;}
+  from{background-color:#D4EEDC;}
+  to {background-color:#3e7e51;}
 }
 
 .cardAlt{/*card background homePg*/
@@ -278,117 +260,127 @@ h4{
     display: flex;
     -ms-flex-direction: column;
     flex-direction: ;
-    min-width: 0;
+/*<<<<<<< Updated upstream*/
+    min-width: 3000px;
+/*=======*/
+    min-width: 2000px;
+/*>>>>>>> Stashed changes*/
     word-wrap: break-word;
     background-color: #b17246;
     background-clip: border-box;
     border-radius: 50rem;
     padding: 50px;
     background-image: linear-gradient(#D4EEDC,#3e7e51);
+    background-position: left;
+    transition:background-position 1s;
 }
 
+.cardAlt:hover,
+.cardAlt:focus{
+  background-image: linear-gradient(45deg,#845ec2,#d65db1,#ff6f91,#ff9671,#ffc75f,#f9f871)
+  
+}
 img {
     vertical-align: middle;
     border-style: none;
     padding: inherit;
 }
-
+#merchtitle{
+  margin-top: 300px;
+  max-width: min-content;
+}
 /*----------------------Sign up-------------------------*/
 .boxInput{
-	width:100%;
-	padding: 5px;
-	border:2px solid #3E7E51;
-	margin: 8px 0;
-	border-radius: inherit;
+  width:100%;
+  padding: 5px;
+  border:2px solid #3E7E51;
+  margin: 8px 0;
+  border-radius: inherit;
 }
 
 /*-----------------------------------------------*/
 .social-signin-facebook{
-	border:2px solid #3E7E51;
-	padding: 5px;
+  border:2px solid #3E7E51;
+  padding: 5px;
 }
 
 .social-signin-twitter{
-	border:2px solid #3E7E51;
-	padding: 5px;
+  border:2px solid #3E7E51;
+  padding: 5px;
 }
 .social-signin-google{
-	border:2px solid #3E7E51;
-	padding: 5px;
+  border:2px solid #3E7E51;
+  padding: 5px;
 }
 .space-across{
-	display: grid;
-	grid-template-columns: auto auto auto auto auto auto;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
     grid-template-rows: auto auto auto auto auto auto;
 }
 .facebook{
-	grid-column: 3 / 3;
+  grid-column: 3 / 3;
 }
 .twitter{
-	grid-column: 4 / 4;
+  grid-column: 4 / 4;
 }
 .google{
-	grid-column: 5 / 5;
+  grid-column: 5 / 5;
 }
 .user{
-  width:100%;
-	padding: 10px;
-	border:2px solid #3E7E51;
-	margin: 8px 0;
-	border-radius: inherit;
+  padding: 10px;
 }
 .bigbox{
-	padding: 50px;
-	border:2px solid #3E7E51;
-	width: 100%;
-	margin: 8px 0;
-	font-family: fantasy;
+  padding: 50px;
+  border:2px solid #3E7E51;
+  width: 100%;
+  margin: 8px 0;
+  font-family: fantasy;
 }
 .vertical{
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
 }
 .rightside{
-	display: block;
-	width: 50%;
-	padding: 5px;
-	border:2px solid #3E7E51;
-	margin: 8px auto;
+  display: block;
+  width: 50%;
+  padding: 5px;
+  border:2px solid #3E7E51;
+  margin: 8px auto;
 }
 .sizer{
-	display: grid;
-	grid-template-columns: auto auto auto auto auto auto;
-	grid-template-rows: auto auto auto auto auto auto;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  grid-template-rows: auto auto auto auto auto auto;
 }
 @media screen and (max-width: 709px) {
-	.sizer {
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-		width: 60%;
-	}
-	.social-signin-facebook{
-		border:2px solid #3E7E51;
-		padding: 5px;
-		width: 100%;
-	}
-	.social-signin-twitter{
-		border:2px solid #3E7E51;
-		padding: 5px;
-		width: 100%;
-	}
-	.social-signin-google{
-		border:2px solid #3E7E51;
-		padding: 5px;
-		width: 100%;
-	}
+  .sizer {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+  }
+  .social-signin-facebook{
+    border:2px solid #3E7E51;
+    padding: 5px;
+    width: 100%;
+  }
+  .social-signin-twitter{
+    border:2px solid #3E7E51;
+    padding: 5px;
+    width: 100%;
+  }
+  .social-signin-google{
+    border:2px solid #3E7E51;
+    padding: 5px;
+    width: 100%;
+  }
 }
 
 .separater{
-	color: solid #3E7E51;
-	outline-color: #9c27b0/*purple*/;
+  color: solid #3E7E51;
+  outline-color: #9c27b0/*purple*/;
 }
 .user.invalid{
   border-color: red;
@@ -396,7 +388,7 @@ img {
 /*--------------------------------------end of sign up----------------------------------*/
 
 /*========================Profile Page=================================================== */
-	
+  
 /* Responsive layout - when the screen is less than 1200px wide, 
 make the pictures stack on top of each other instead of next to each other 
 
@@ -422,8 +414,8 @@ make the pictures stack on top of each other instead of next to each other
 }
 
 .pgProfile h1{
-	text-align:center;
-	padding: 70px;
+  text-align:center;
+  padding: 70px;
 }
 
 .row:after {
@@ -441,35 +433,35 @@ make the pictures stack on top of each other instead of next to each other
 }    
 
 .pgProfile h-1, h-2{
-	margin-top: 45px;
-	font-size: 3.5rem;
-	margin-bottom: 1.5rem;
-	font-weight: 500;
-	line-height: 1.2;
+  margin-top: 45px;
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  line-height: 1.2;
 }
 
 .imgGroup{
-	display: inline-block;
+  display: inline-block;
   float: left;
-	position: relative;
-	height: auto;
-	max-width: auto;
-	/*overflow-y: hidden;
-	overflow-x: auto; */
-	word-wrap: normal;
-	white-space: nowrap;
-	justify-content: space-between;
+  position: relative;
+  height: auto;
+  max-width: auto;
+  /*overflow-y: hidden;
+  overflow-x: auto; */
+  word-wrap: normal;
+  white-space: nowrap;
+  justify-content: space-between;
 }
 
 .Images{
-	display: inline-block;
-	margin: 2px;
-	padding: 5px;
-	vertical-align: middle;
+  display: inline-block;
+  margin: 2px;
+  padding: 5px;
+  vertical-align: middle;
 }
 
 .pgProfile p{
-	outline-style: none;
+  outline-style: none;
     white-space: normal;
     font-family: monospace;
     text-align: center;
@@ -482,13 +474,13 @@ make the pictures stack on top of each other instead of next to each other
 } */
 
 .pgProfile input{
-	display: block;
+  display: block;
   /*direction: ltr; */
   width: 100%;
-	padding: 3px;
-	border:5px outset #80c18f;
-	margin: 8px;
-	border-radius: inherit;
+  padding: 3px;
+  border:5px outset #80c18f;
+  margin: 8px;
+  border-radius: inherit;
 }
 
 /* image shaking animation*/
@@ -498,7 +490,7 @@ make the pictures stack on top of each other instead of next to each other
 }
 
 @keyframes shake{
-	0% { transform: translate(1px, 1px) rotate(0deg); }
+  0% { transform: translate(1px, 1px) rotate(0deg); }
   10% { transform: translate(-1px, -2px) rotate(-1deg); }
   20% { transform: translate(-3px, 0px) rotate(1deg); }
   30% { transform: translate(3px, 2px) rotate(0deg); }
@@ -512,8 +504,8 @@ make the pictures stack on top of each other instead of next to each other
 }
 
 .button:focus{
-	border-radius: 15rem;
-	background-color: #D4EEDC;
+  border-radius: 15rem;
+  background-color: #D4EEDC;
 }
 /* ===================^ Profile Page ^========================================================= */
 
@@ -671,9 +663,10 @@ make the pictures stack on top of each other instead of next to each other
 .merch-wrapper{
   margin-left: auto;
   margin-right: auto;
+
 }
 
-/* css alignment fixes -Steven */
+/* css alignment fixes -Steven 
 .sTitle{
   width: 30%;
   margin-left: auto;
@@ -682,7 +675,7 @@ make the pictures stack on top of each other instead of next to each other
 
 .sTitle2{
   width: 35%;
-}
+}*/
 
 .cardText{
   margin-left: 50px;
@@ -695,8 +688,756 @@ make the pictures stack on top of each other instead of next to each other
 }
 
 /* end of css alignment fixes -Steven */
-
 /*-------------------------------------dice-----------------------------------------------*/
+
+div.dice{
+  height: 100px;
+  width: 100px;
+  padding: 50px;
+  margin: 50px auto;
+  border: 1px solid gray;
+  border-radius: 10px;  
+  font-size:80px;
+}
+
+.user.invalid{
+  border-color: red;
+}
+/*-------------------------------------dice-----------------------------------------------*/
+
+.dice{
+  height: 100px;
+  width: 100px;
+  padding: 5px;
+  margin: 50px auto;
+  border: 2px solid #3E7E51;
+  border-radius: 10px;  
+  font-size:55px;
+  text-align: center;
+  background-color: white;
+}
+.space-across-dice{
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto auto;
+}
+#die1{
+  grid-column: 3 / 3;
+}
+#die2{
+  grid-column: 4 / 4;
+}
+#die3{
+  grid-column: 5 / 5;
+}
+.dice-animation{
+  animation: rotation 0.1s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.dice-button{
+  border: 2px solid #3E7E51;
+  margin-left: 40%;
+  width: 20%;
+  padding: 10px;
+}
+  /*----------------------------------end of dice-----------------------------------------------*/
+
+
+/*	height: 400px;
+	overflow: scroll;
+}
+
+.chatBox{
+	display: block;
+	width: 100%;
+	margin-bottom: 10px;
+	padding: 18px;
+}
+
+.btnSend{
+	width: 100%;
+	height: 30px;
+}
+
+
+/*----------Tyrees Code-----------------*
+
+.navbar{
+	overflow: hidden;
+	background-color: #3E7E51/*dark green*;
+	text-transform: uppercase;
+	white-space: pre;
+}
+
+.navbar a{
+	float: right;
+	font-size: 15px;
+	color: white;
+	text-align: center;
+	padding: 15px
+}
+
+.carousel{
+	padding: 50px;
+	border:10px solid transparent;
+	border-image: 50 round;
+}
+
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev{
+	display: block;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+
+.pgHome{
+	contain:content;
+}
+
+.navbar a{
+	float: right;
+	font-size: 15px;
+	color: white;
+	text-align: center;
+	padding: 15px
+}
+
+input{
+	font-family: fantasy;
+}
+
+h1{
+
+	text-align:center;
+	text-align-last: auto;
+  text-shadow: 2px 3px rgba(116, 160, 208, 0.5);
+	padding: 100px;
+	font-variant: small-caps;
+	/*Header Animation*
+	animation-name: color;
+	animation-duration:6s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+	animation-timing-function: ease-in-out;
+}
+
+h2{
+  padding-top: 1px;
+	border-bottom: groove;
+	font-size: 2rem;
+  border-bottom: groove;    
+  float: right;
+}
+
+/*Header Animation*
+@keyframes color {
+	from{color: red;}
+	to {color: yellow;}
+}
+
+.section .Storerow{
+	display: table;
+}
+
+body{/*body gradient*
+	background-image: linear-gradient(#D4EEDC,#eaea45b5);
+	background-color:#D4EEDC;
+	color: black;
+}
+
+footer .rowsection{
+	text-align: center;	
+}
+
+.homePg .container{
+  display: inline-flex;
+}
+
+.homePg .row{
+  display: flex;
+}
+
+.homePg .column{
+  flex: 33%;
+  padding: 5px;
+  display: contents;
+}
+
+p{
+	padding: 50px;
+  white-space: pre;
+/*	outline-style: none;/
+	font-family: fantasy;
+	text-align: center;
+	font-size: x-large;
+	content: contain;
+} 
+
+img {
+    vertical-align: middle;
+    border-style: none;
+    padding: inherit;
+}
+
+iframe{
+	width: 100%;
+	height: 300px;
+	outline-style: groove;
+	outline-color: #D4EEDC;
+}
+
+/* Responsive layout - media Query*
+@media all and(max-width: 100%){
+	max-width:100%;
+	}
+}
+
+
+@media all and (min-width: 576px){
+.container .container-sm {
+    max-width: none;
+	}
+}
+@media (min-width: 768px){
+.container, .container-md, .container-sm {
+    max-width: none;
+	}
+}
+@media (min-width: 768px){
+.col-md-6 {
+   /* -ms-flex: 0 0 50%;*
+    flex: 0 0 50%;*
+    max-width:none;
+	}
+}
+
+
+/*^----------media query---------^*
+.col-4{
+	max-width: 100px;
+}
+.col{
+	padding: 19px;
+}
+  
+.col-12{
+	padding: 50px;
+	display: contents;
+}
+  
+.card{
+	background-color: #D4EEDC;
+  display: contents;
+}
+  
+ .card-wrapper {
+    height: 100%;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    transition: box-shadow 0.3s;
+   -webkit-flex:1;
+}
+
+#card2{
+	padding: 50px;
+  margin: 40px;
+}
+
+.col-auto {
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: auto;
+    max-width: 100%;
+    padding: 50px;
+} 
+
+.card-img, .card-img-bottom {
+    border-bottom-right-radius: calc(.25rem - 1px);
+    border-bottom-left-radius: calc(.25rem - 1px);
+    padding: 50px;
+}
+.card-text{
+  margin-right: 50px;
+  transform: scaleY(1.5);
+}
+#text2{
+   height: 0px;
+    width: 800px;
+    padding-left: 200px;
+    
+}
+.cardText{/*cardtext background*
+    text-align: center;
+    justify-content: center;
+    border-bottom: solid;
+    border-radius: 50px;
+   /* background-image: linear-gradient(45deg,#D4EEDC, #3e7e51);*
+    animation-name: background;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-fill-mode: both;
+}
+  
+@keyframes background {
+	from{background-color:#D4EEDC;}
+	to {background-color:#3e7e51;}
+}
+
+.cardAlt{/*card background homePg*
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: ;
+    min-width: 3000px;
+    word-wrap: break-word;
+    background-color: #b17246;
+    background-clip: border-box;
+    border-radius: 50rem;
+    padding: 50px;
+    background-image: linear-gradient(#D4EEDC,#3e7e51);
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+    padding: inherit;
+}
+
+/*----------------------Sign up-------------------------*
+.boxInput{
+	width:100%;
+	padding: 5px;
+	border:2px solid #3E7E51;
+	margin: 8px 0;
+	border-radius: inherit;
+}
+
+/*-----------------------------------------------*
+.social-signin-facebook{
+	border:2px solid #3E7E51;
+	padding: 5px;
+}
+
+.social-signin-twitter{
+	border:2px solid #3E7E51;
+	padding: 5px;
+}
+.social-signin-google{
+	border:2px solid #3E7E51;
+	padding: 5px;
+}
+.space-across{
+	display: grid;
+	grid-template-columns: auto auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto;
+}
+.facebook{
+	grid-column: 3 / 3;
+}
+.twitter{
+	grid-column: 4 / 4;
+}
+.google{
+	grid-column: 5 / 5;
+}
+.user{
+  width:100%;
+	padding: 10px;
+	border:2px solid #3E7E51;
+	margin: 8px 0;
+	border-radius: inherit;
+}
+.bigbox{
+	padding: 50px;
+	border:2px solid #3E7E51;
+	width: 100%;
+	margin: 8px 0;
+	font-family: fantasy;
+}
+.vertical{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 60%;
+}
+.rightside{
+	display: block;
+	width: 50%;
+	padding: 5px;
+	border:2px solid #3E7E51;
+	margin: 8px auto;
+}
+.sizer{
+	display: grid;
+	grid-template-columns: auto auto auto auto auto auto;
+	grid-template-rows: auto auto auto auto auto auto;
+}
+@media screen and (max-width: 709px) {
+	.sizer {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 60%;
+	}
+	.social-signin-facebook{
+		border:2px solid #3E7E51;
+		padding: 5px;
+		width: 100%;
+	}
+	.social-signin-twitter{
+		border:2px solid #3E7E51;
+		padding: 5px;
+		width: 100%;
+	}
+	.social-signin-google{
+		border:2px solid #3E7E51;
+		padding: 5px;
+		width: 100%;
+	}
+}
+
+.separater{
+	color: solid #3E7E51;
+	outline-color: #9c27b0/*purple*/;
+}
+.user.invalid{
+  border-color: red;
+}
+/*--------------------------------------end of sign up----------------------------------*/
+
+/*========================Profile Page=================================================== */
+	
+/* Responsive layout - when the screen is less than 1200px wide, 
+make the pictures stack on top of each other instead of next to each other 
+
+-small laptop devices  */
+@media screen and (max-width: 982px) {
+  .Images {
+    width: 33.33333%
+  }
+}
+
+/* tablet devices  */
+@media screen and (max-width: 765px) {
+  .Images {
+    width: 49.99999%
+  }
+}
+
+.pgProfile column {
+    display: flex;
+    flex: 100%;
+    flex: 1;
+    flex-direction: column;
+    padding: 10px;
+}
+*/
+/* Responsive layout - when the screen is less than 600px wide, 
+make the two columns stack on top of each other instead of next to each other *
+@media screen and (max-width: 600px) {
+  .column {
+
+/* phones */
+@media only screen and (max-width: 340px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.pgProfile h1{
+	text-align:center;
+	padding: 70px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout() *
+
+@media screen and (min-width: 576px){
+.col-sm-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 30%;
+  }
+}    
+
+.pgProfile h-1, h-2{
+	margin-top: 45px;
+	font-size: 3.5rem;
+	margin-bottom: 1.5rem;
+	font-weight: 500;
+	line-height: 1.2;
+}
+
+.imgGroup{
+	display: inline-block;
+  float: left;
+	margin-left: auto;
+  margin-right: auto;
+	/*padding-left: 126px; *
+	position: relative;
+	height: auto;
+	max-width: auto;
+	/*overflow-y: hidden;
+	overflow-x: auto; *
+	word-wrap: normal;
+	white-space: nowrap;
+	justify-content: space-between;
+}
+
+.Images{
+	display: inline-block;
+	margin: 2px;
+	padding: 5px;
+	vertical-align: middle;
+}
+
+.pgProfile p{
+	outline-style: none;
+    white-space: normal;
+    font-family: monospace;
+    text-align: center;
+    margin-bottom: 1rem;
+
+}
+
+/*.pgProfile form{
+  direction: rtl;
+} *
+
+.pgProfile input{
+	display: block;
+  /*direction: ltr; *
+  width: 100%;
+	padding: 3px;
+	border:5px outset #80c18f;
+	margin: 8px;
+	border-radius: inherit;
+}
+
+/* image shaking animation*
+.Images:hover{
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake{
+	0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.button:focus{
+	border-radius: 15rem;
+	background-color: #D4EEDC;
+}
+/* ===================^ Profile Page ^========================================================= */
+
+/* Tool View Page *
+.cal-body {
+  width: 416px;
+  margin: 4% auto;
+  font-family: 'Source Sans Pro', sans-serif;
+  letter-spacing: 5px;
+  font-size: 1.8rem;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.calculator {
+  padding: 20px;
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 1px;
+  background-color: black;
+}
+
+.cal-input {
+  border: 1px solid #ddd;
+  border-radius: 1px;
+  height: 80px;
+  padding-right: 15px;
+  padding-top: 10px;
+  text-align: right;
+  margin-right: 6px;
+  font-size: 2.5rem;
+  overflow-x: auto;
+  transition: all .2s ease-in-out;
+  color: white;
+}
+
+.cal-input:hover {
+  border: 1px solid #bbb;
+  -webkit-box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+.cal-buttons {}
+
+.cal-operators {}
+
+.cal-operators div {
+  display: inline-block;
+  border: 1px solid #bbb;
+  border-radius: 1px;
+  width: 80px;
+  text-align: center;
+  padding: 10px;
+  margin: 20px 4px 10px 0;
+  cursor: pointer;
+  background-color: #ddd;
+  transition: border-color .2s ease-in-out, background-color .2s, box-shadow .2s;
+}
+
+.cal-operators div:hover {
+  background-color: #ddd;
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  border-color: #aaa;
+}
+
+.cal-operators div:active {
+  font-weight: bold;
+}
+
+.cal-leftPanel {
+  display: inline-block;
+}
+
+.cal-numbers div {
+  display: inline-block;
+  border: 1px solid #ddd;
+  border-radius: 1px;
+  width: 80px;
+  text-align: center;
+  padding: 10px;
+  margin: 10px 4px 10px 0;
+  cursor: pointer;
+  background-color: #f9f9f9;
+  transition: border-color .2s ease-in-out, background-color .2s, box-shadow .2s;
+}
+
+.cal-numbers div:hover {
+  background-color: #f1f1f1;
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  border-color: #bbb;
+}
+
+.cal-numbers div:active {
+  font-weight: bold;
+}
+
+.cal-equal {
+  display: inline-block;
+  border: 5px outset #f8f9fa;
+  border-radius: 1px;
+  width: 21%;
+  height: 320px;
+  text-align: center;
+  padding: 127px 10px;
+  margin: 10px 6px 10px 0;
+  vertical-align: bottom;
+  cursor: pointer;
+  color: #FFF;
+  background-color: #e5ef83;
+  transition: all .2s ease-in-out;
+}
+
+.cal-equal:hover {
+  background-color: #7e4fda;
+  border: 5px outset #e5ef83;
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+.cal-equal:active {
+  font-weight: bold;
+}
+/* ^ Tool View Page ^ */
+
+/*---------merch page----------*
+
+.flex-container{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 50px;
+  margin-left: 126px;
+}
+
+.flex-container > div {
+  background-color: #2f74434f;
+  width: 270px;
+  margin: 10px;
+  text-align: center;
+  line-height: 39px;
+  font-size: 30px;
+}
+
+.card-img{
+  margin-left: -50px;
+}
+
+.merchrow{
+  display: -webkit-inline-box;
+  display: block;
+}
+
+.merch-wrapper{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* css alignment fixes -Steven */
+/*.sTitle{
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sTitle2{
+  width: 35%;
+}*
+
+.cardText{
+  margin-left: 50px;
+}
+
+.scolumn{
+  width: 100%;
+  margin-left: 100px;
+  margin-right: auto;
+}
+
+/* end of css alignment fixes -Steven *
+/*-------------------------------------dice-----------------------------------------------*
 
 .dice{
   height: 100px;
