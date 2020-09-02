@@ -331,7 +331,11 @@ img {
 	grid-column: 5 / 5;
 }
 .user{
+  width:100%;
 	padding: 10px;
+	border:2px solid #3E7E51;
+	margin: 8px 0;
+	border-radius: inherit;
 }
 .bigbox{
 	padding: 50px;
