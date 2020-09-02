@@ -22,66 +22,86 @@ btnSubmit.addEventListener('click', function(e){
 }
 
 function check(){
-  if(validateUserName() === true, 
-    validateFirstName() === true,
-    validateLastName() === true,
-    validateEmail() === true,
-    validatePassword() === true,
-    retypePassword() === true,
-    validateDateOfBirth() === true
-  )
-  {
+  var formSubmit = true;
+  if(validateUserName() === false){
+    formSubmit = false;
+  }
+  if(validateFirstName() === false){
+    formSubmit = false;
+  }
+  if(validateLastName() === false){
+    formSubmit = false;
+  }
+  if(validateEmail() === false){
+    formSubmit = false;
+  }
+  if(validatePassword() === false){
+    formSubmit = false;
+  }
+  if(retypePassword() === false){
+    formSubmit = false;
+  }
+  if(validateDateOfBirth() === false){
+    formSubmit = false;
+  }
+console.log(formSubmit);
+console.log(formSubmit == true);
+console.log(formSubmit === true);
+  if(formSubmit){
     form.submit();
   }
 }
 
-function validateFirstName(){
-  console.log('validateFirstNameClicked');
-  if(checkForSpaces(firstName)) return;
-  if(isEmpty(firstName)) return;
-  if(!checkIfOnlyLetters(firstName)) return;
-  if(checkLength(firstName, 2, 20, "First Name")) return;
-  return true;
-}
 function validateUserName(){
   console.log('validateFirstNameClicked');
-  if(checkForSpaces(userName)) return;
-  if(isEmpty(userName)) return;
-  if(checkLength(userName, 6, 20, "Username")) return;
+  if(checkForSpaces(userName)) return false;
+  if(isEmpty(userName)) return false;
+  if(!checkLength(userName, 6, 20, "Username")) return false;
+  return true;
+}
+function validateFirstName(){
+  console.log('validateFirstNameClicked');
+  if(checkForSpaces(firstName)) return false;
+  if(isEmpty(firstName)) return false;
+  if(!checkIfOnlyLetters(firstName)) return false;
+  if(!checkLength(firstName, 2, 20, "First Name")) return false;
   return true;
 }
 function validateLastName(){
   console.log('validateLastNameClicked');
-  if(checkForSpaces(lastName)) return;
-  if(isEmpty(lastName)) return;
-  if(checkLength(lastName, 2, 20, "Last Name")) return;
+  console.log(lastName);
+  console.log(typeof lastName);
+  if(checkForSpaces(lastName)) return false;
+  if(isEmpty(lastName)) return false;
+  if(!checkIfOnlyLetters(lastName)) return false;
+  if(!checkLength(lastName, 2, 20, "Last Name")) return false;
   return true;
 }
 function validateEmail(){
   console.log('validateEmailClicked');
-  if(checkForSpaces(email)) return;
-  if(isEmpty(email)) return;
-  if(checkEmail(email)) return;
+  if(checkForSpaces(email)) return false;
+  if(isEmpty(email)) return false;
+  if(!checkEmail(email)) return false;
   return true;
 }
 function validatePassword(){
   console.log('validatePasswordClicked');
-  if(checkForSpaces(password)) return;
-  if(isEmpty(password)) return;
-  checkLength(password, 8, 30, "Password");
+  if(checkForSpaces(password)) return false;
+  if(isEmpty(password)) return false;
+  if(!checkLength(password, 8, 30, "Password"));
   return true;
 }
 function retypePassword(){
   console.log('retypePasswordClicked');
-  if(checkForSpaces(confirmPass)) return;
-  if(isEmpty(confirmPass)) return;
-  if(checkConfirmPass(confirmPass)) return;
+  if(checkForSpaces(confirmPass)) return false;
+  if(isEmpty(confirmPass)) return false;
+  if(!checkConfirmPass(confirmPass)) return false;
   return true;
 }
 function validateDateOfBirth(){
   console.log('validateDateOfBirthClicked');
-  if(checkForSpaces(dob)) return;
-  if(isEmpty(dob)) return;
+  if(checkForSpaces(dob)) return false;
+  if(isEmpty(dob)) return false;
   return true;
 }
 function checkForSpaces(field){
@@ -104,23 +124,26 @@ function setValid(field){
     field.classList.remove("invalid");
 }
 function checkIfOnlyLetters(field){
-    if(/^[a-zA-Z ]+$/.test(field.value)){
+    console.log(field.value);
+    if(/^[a-zA-Z ]+$/i.test(field.value)){
         setValid(field);
         return true;
     }else{
-        setInvalid(field, `${field.name} must contain only letters`);
+        console.log(field);
+        setInvalid(field);
         return false;
     }
 }
 
 function checkLength(field, minlen, maxlen, name) {
   var value = field.value;
-
+  console.log(value);
   if (value.length < minlen || value.length > maxlen) {
     alert(name+" must be in between " +minlen+ " to "+maxlen+" charcters long.")
     setInvalid(field);
     return false; 
   }
+  console.log(value.length);
   setValid(field);
   return true;
 }
@@ -141,6 +164,9 @@ function checkEmail(field){
 function checkConfirmPass(field){
   var pass = document.form.Password.value;
   var confirm = document.form.Confirmpass.value;
+  console.log(pass);
+  console.log(confirm);
+  console.log(pass != confirm);
   if (pass != confirm) {
     alert("Passwords do not match.");
     setInvalid(field);
@@ -243,6 +269,7 @@ for (var i = 0; i < operator.length; i++) {
 }
 
 // on click of 'equal' button
+if(result !== null){
 result.addEventListener("click", function() {
 
   // this is the string that we will be processing eg. -10+26+33-56*34/23
@@ -298,10 +325,11 @@ result.addEventListener("click", function() {
 
   resultDisplayed = true; // turning flag if result is displayed
 });
-
+}
 // clearing the input on press of clear
+if(clear !== null){
 clear.addEventListener("click", function() {
   input.innerHTML = "";
 })
-
+}
 /* ^ Calculator */
