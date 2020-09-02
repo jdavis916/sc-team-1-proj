@@ -64,13 +64,12 @@
 
 input{
   font-family: fantasy;
-}
+}    
 
 h1{
-  font-size: xxx-large;
   text-align:center;
-  text-align-last: justify;
-  text-shadow: 2px 3px rgba(116, 160, 208, 0.5);
+  text-align-last: auto;
+  text-shadow: 2px3pxrgba(116, 160, 208, 0.5);
   padding: 100px;
   font-variant: small-caps;
   /*Header Animation*/
@@ -326,8 +325,13 @@ img {
 .google{
   grid-column: 5 / 5;
 }
+
 .user{
+  width:100%;
   padding: 10px;
+  border:2px solid #3E7E51;
+  margin: 8px 0;
+  border-radius: inherit;  
 }
 .bigbox{
   padding: 50px;
@@ -690,21 +694,10 @@ make the pictures stack on top of each other instead of next to each other
 /* end of css alignment fixes -Steven */
 /*-------------------------------------dice-----------------------------------------------*/
 
-div.dice{
-  height: 100px;
-  width: 100px;
-  padding: 50px;
-  margin: 50px auto;
-  border: 1px solid gray;
-  border-radius: 10px;  
-  font-size:80px;
-}
-
 .user.invalid{
   border-color: red;
 }
 /*-------------------------------------dice-----------------------------------------------*/
-
 .dice{
   height: 100px;
   width: 100px;
@@ -733,7 +726,7 @@ div.dice{
 .dice-animation{
   animation: rotation 0.1s infinite linear;
 }
-
+ 
 @keyframes rotation {
   from {
     transform: rotate(0deg);
@@ -742,14 +735,24 @@ div.dice{
     transform: rotate(359deg);
   }
 }
-
+ 
 .dice-button{
   border: 2px solid #3E7E51;
   margin-left: 40%;
+  margin-right: auto;
   width: 20%;
   padding: 10px;
 }
-  /*----------------------------------end of dice-----------------------------------------------*/
+@media screen and (max-width: 475px) {
+  .dice-button{
+    border: 2px solid #3E7E51;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding: 10px;
+  }
+}
+/*----------------------------------end of dice-----------------------------------------------*/
 
 
 /*	height: 400px;
