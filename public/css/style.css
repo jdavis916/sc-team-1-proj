@@ -301,15 +301,21 @@ img {
 .social-signin-facebook{
   border:2px solid #3E7E51;
   padding: 5px;
+  background-color: #3b5998;
+  color: white;
 }
 
 .social-signin-twitter{
   border:2px solid #3E7E51;
   padding: 5px;
+  background-color: #1DA1F2;
+  color: white;
 }
 .social-signin-google{
   border:2px solid #3E7E51;
   padding: 5px;
+  background-color: #DB4437;
+  color: white;
 }
 .space-across{
   display: grid;
