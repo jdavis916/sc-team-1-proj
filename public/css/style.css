@@ -65,21 +65,6 @@
 input{
   font-family: fantasy;
 }    
-
-h1{
-  text-align:center;
-  text-align-last: auto;
-  text-shadow: 2px3pxrgba(116, 160, 208, 0.5);
-  padding: 100px;
-  font-variant: small-caps;
-  /*Header Animation*/
-  animation-name: color;
-  animation-duration:6s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate-reverse;
-  animation-timing-function: ease-in-out;
-}
-
 h2{
   border-bottom: groove;
   font-size: 2rem;
@@ -87,9 +72,22 @@ h2{
   float: right;
 }
 
+h1{
+  text-align:center;
+  text-align-last: auto;
+  text-shadow: 2px3pxrgba(116, 160, 208, 0.5);
+  padding: 100px;
+  font-variant: small-caps;
+  /*Header Animation
+  animation-name: color;
+  animation-duration:6s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-timing-function: ease-in-out;
+}*/
 
 
-/*Header Animation*/
+/*Header Animation*
 @keyframes color {
   from{color: red;}
   to {color: yellow;}
@@ -97,8 +95,8 @@ h2{
 
 .section .Storerow{
   display: table;
+}*/
 }
-
 body{/*body gradient*/
   background-image: linear-gradient(#D4EEDC,#eaea45b5);
   background-color:#D4EEDC;
@@ -126,7 +124,7 @@ footer .rowsection{
 }
 
 p{
-  padding: 50px;
+  padding: 10px;
   white-space: pre;
 /*  outline-style: none;*/
   font-family: fantasy;
@@ -185,22 +183,33 @@ iframe{
   padding: 50px;
   display: contents;
 }
-  
+  #caption{
+    font:small-caption;
+    font-style: italic;
+    font-size:small;
+    margin-left: 100px;
+  }
 .card{
   background-color: #D4EEDC;
   display: contents;
 }
 .card-text{
-  margin-right: 50px;
+  margin-right: 0px;
   transform: scaleY(1.5);
 }
 #text2{
-   height: 0px;
+   height: 40px;
     width: 800px;
-    padding-left: 200px;
-    
+    padding-left: 390px;
+    -webkit-text-stroke-width: thick;
+    margin-top: 100px;
+    margin-bottom: 0px;
 }
-  
+.bio{
+  font-family:monospace;
+    -webkit-text-stroke-width: medium;
+}
+
  .card-wrapper {
     height: 100%;
     box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
@@ -227,7 +236,13 @@ h2{
   border-bottom: groove; 
 }
 
+.card-box-title{
+  margin-top: 1000px;
+}
 
+#subtitle{
+  display: contents;
+}
 
 .card-img, .card-img-bottom {
     border-bottom-right-radius: calc(.25rem - 1px);
@@ -268,7 +283,7 @@ h2{
     background-color: #b17246;
     background-clip: border-box;
     border-radius: 50rem;
-    padding: 50px;
+    padding: px;
     background-image: linear-gradient(#D4EEDC,#3e7e51);
     background-position: left;
     transition:background-position 1s;
