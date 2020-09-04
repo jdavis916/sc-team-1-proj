@@ -69,7 +69,7 @@ input{
 h1{
   text-align:center;
   text-align-last: auto;
-  text-shadow: 2px3pxrgba(116, 160, 208, 0.5);
+  text-shadow: 2px 3px rgba(116, 160, 208, 0.5);
   padding: 100px;
   font-variant: small-caps;
   /*Header Animation*/
@@ -517,6 +517,7 @@ make the pictures stack on top of each other instead of next to each other
 .cal-body {
   width: 416px;
   margin: 4% auto;
+  margin-bottom: 100px;
   font-family: 'Source Sans Pro', sans-serif;
   letter-spacing: 5px;
   font-size: 1.8rem;
