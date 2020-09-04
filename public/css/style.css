@@ -71,32 +71,33 @@ h2{
   border-bottom: groove;    
   float: right;
 }
-
-h1{
-  text-align:center;
-  text-align-last: auto;
-  text-shadow: 2px3pxrgba(116, 160, 208, 0.5);
-  padding: 100px;
-  font-variant: small-caps;
-  /*Header Animation
+/*.ourstory{
+  /*Header Animation*
   animation-name: color;
   animation-duration:6s;
   animation-iteration-count: infinite;
   animation-direction: alternate-reverse;
   animation-timing-function: ease-in-out;
-}*/
+}
 
 
 /*Header Animation*
 @keyframes color {
-  from{color: red;}
-  to {color: yellow;}
+  from{color: #ff6f91;}
+  to {color:#845ec2 ;}
 }
+}*/
+h1{
+  
+  text-align-last: auto;
+  
+  font-variant: small-caps;
+  }
 
 .section .Storerow{
   display: table;
-}*/
 }
+
 body{/*body gradient*/
   background-image: linear-gradient(#D4EEDC,#eaea45b5);
   background-color:#D4EEDC;
@@ -186,9 +187,9 @@ iframe{
   #caption{
     font:small-caption;
     font-style: italic;
-    font-size:small;
-    margin-left: 100px;
-  }
+    font-size: small;
+    margin-left: 900px;
+}
 .card{
   background-color: #D4EEDC;
   display: contents;
@@ -197,20 +198,19 @@ iframe{
   margin-right: 0px;
   transform: scaleY(1.5);
 }
-#subtitle{
-  display: contents;
-}
+
 #text2{
    height: 40px;
     width: 800px;
     padding-left: 390px;
     -webkit-text-stroke-width: thick;
-    margin-top: 100px;
+    
     margin-bottom: 0px;
 }
 .bio{
-  font-family:monospace;
+  font-family: none;
     -webkit-text-stroke-width: medium;
+    font-size: xx-large;
 }
   
  .card-wrapper {
@@ -245,6 +245,7 @@ h2{
 
 #subtitle{
   display: contents;
+  font-weight: 900;
 }
 
 .card-img, .card-img-bottom {
@@ -252,7 +253,19 @@ h2{
     border-bottom-left-radius: calc(.25rem - 1px);
     padding: 50px;
 }
+.title{
+  text-align: center;
+  padding-top: 30px;
+}
+#merchtxt{
+  font-family: monospace;
+}
 
+.figureWrapper{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
 .cardText{/*cardtext background*/
     text-align: center;
     justify-content: center;
@@ -264,6 +277,7 @@ h2{
     animation-iteration-count: infinite;
     animation-direction: alternate-reverse;
     animation-fill-mode: both;
+    padding-top: 20px;
 }
   
 @keyframes background {
@@ -300,12 +314,17 @@ h2{
 img {
     vertical-align: middle;
     border-style: none;
-    padding: inherit;
+    
+    padding-top: 10px;
+}
+#exclusive{
+  padding: 150px;
 }
 #merchtitle{
   margin-top: 300px;
   max-width: min-content;
 }
+
 /*----------------------Sign up-------------------------*/
 .boxInput{
   width:100%;
