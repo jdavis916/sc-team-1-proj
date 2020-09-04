@@ -124,7 +124,7 @@ footer .rowsection{
 }
 
 p{
-  padding: 10px;
+  padding-top: 150px;
   white-space: pre;
 /*  outline-style: none;*/
   font-family: fantasy;
@@ -317,23 +317,26 @@ img {
 
 /*-----------------------------------------------*/
 .social-signin-facebook{
-  border:2px solid #3E7E51;
+  border:2px solid #24365e;
   padding: 5px;
   background-color: #3b5998;
   color: white;
+  border-radius: 15px;
 }
 
 .social-signin-twitter{
-  border:2px solid #3E7E51;
+  border:2px solid #1574af;
   padding: 5px;
   background-color: #1DA1F2;
   color: white;
+  border-radius: 15px;
 }
 .social-signin-google{
-  border:2px solid #3E7E51;
+  border:2px solid #a8352b;
   padding: 5px;
   background-color: #DB4437;
   color: white;
+  border-radius: 15px;
 }
 .space-across{
   display: grid;
@@ -374,6 +377,7 @@ img {
   display: block;
   width: 50%;
   padding: 5px;
+  border-radius: 15px;
   border:2px solid #3E7E51;
   margin: 8px auto;
 }
@@ -382,7 +386,7 @@ img {
   grid-template-columns: auto auto auto auto auto auto;
   grid-template-rows: auto auto auto auto auto auto;
 }
-@media screen and (max-width: 709px) {
+@media screen and (max-width: 768px) {
   .sizer {
     display: block;
     margin-left: auto;
@@ -390,19 +394,36 @@ img {
     width: 60%;
   }
   .social-signin-facebook{
-    border:2px solid #3E7E51;
+    border:2px solid #24365e;
     padding: 5px;
     width: 100%;
+    background-color: #3b5998;
+    color: white;
+    border-radius: 15px;
   }
   .social-signin-twitter{
-    border:2px solid #3E7E51;
+    border:2px solid #1574af;
     padding: 5px;
     width: 100%;
+    background-color: #1DA1F2;
+    color: white;
+    border-radius: 15px;
   }
   .social-signin-google{
-    border:2px solid #3E7E51;
+    border:2px solid #a8352b;
     padding: 5px;
     width: 100%;
+    background-color: #DB4437;
+    color: white;
+    border-radius: 15px;
+  }
+  .rightside{
+    display: block;
+    width: 75%;
+    padding: 5px;
+    border-radius: 15px;
+    border:2px solid #3E7E51;
+    margin: 8px auto;
   }
 }
 
@@ -766,6 +787,7 @@ make the pictures stack on top of each other instead of next to each other
   margin-right: auto;
   width: 20%;
   padding: 10px;
+  border-radius: 15px;
 }
 @media screen and (max-width: 475px) {
   .dice-button{
@@ -773,6 +795,7 @@ make the pictures stack on top of each other instead of next to each other
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+    border-radius: 15px;
     padding: 10px;
   }
 }
