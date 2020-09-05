@@ -65,6 +65,21 @@
 input{
   font-family: fantasy;
 }    
+
+h1{
+  text-align:center;
+  text-align-last: auto;
+  text-shadow: 2px 3px rgba(116, 160, 208, 0.5);
+  padding: 100px;
+  font-variant: small-caps;
+  /*Header Animation*/
+  animation-name: color;
+  animation-duration:6s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-timing-function: ease-in-out;
+}
+
 h2{
   border-bottom: groove;
   font-size: 2rem;
@@ -581,6 +596,7 @@ make the pictures stack on top of each other instead of next to each other
 .cal-body {
   width: 416px;
   margin: 4% auto;
+  margin-bottom: 100px;
   font-family: 'Source Sans Pro', sans-serif;
   letter-spacing: 5px;
   font-size: 1.8rem;
