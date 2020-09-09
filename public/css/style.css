@@ -552,20 +552,6 @@ make the pictures stack on top of each other instead of next to each other
 
 }
 
-/*.pgProfile form{
-  direction: rtl;
-} */
-
-.pgProfile input{
-  display: block;
-  /*direction: ltr; */
-  width: 100%;
-  padding: 3px;
-  border:5px outset #80c18f;
-  margin: 8px;
-  border-radius: inherit;
-}
-
 /* image shaking animation*/
 .Images:hover{
     animation: shake 0.5s;
